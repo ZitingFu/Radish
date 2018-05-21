@@ -1,0 +1,50 @@
+.list-group-item:first-child{
+    border-top-left-radius:0;
+    border-top-right-radius:0;
+}
+.badge{
+    background: #fff;
+    font-size: 15px;
+    color: #333333;
+    font-weight: 400;
+    padding-top: 20px;
+}
+.col-list ul li{
+    height: 51px;
+    font-size: 15px;
+    line-height: 51px;
+}
+.col-list ul li a{
+    display: inline-block;
+    width: 95%;
+    height: 100%;
+}
+.list-group-item{
+    border-left: none;
+    border-right: none;
+    border-color: #ececec;
+    padding: 0;
+}
+.love{
+    overflow: hidden;
+}
+.love a{
+    font-size: 14px;
+    float: left;
+    width: 120px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    background: #ececec;
+    color: #999999;
+}
+a.love_active{
+    background: #fda249;
+    color: #fff;
+}
+.activeLove{
+    color: #fda249;
+}
+.wrapper-navbar ul li.active a{
+    color: #fff;
+}

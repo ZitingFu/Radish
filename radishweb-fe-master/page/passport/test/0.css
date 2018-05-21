@@ -1,0 +1,55 @@
+.list-group-item:first-child{
+    border-top-left-radius:0;
+    border-top-right-radius:0;
+}
+.badge{
+    background: #fff;
+    font-size: 15px;
+    color: #333333;
+    font-weight: 400;
+    padding-top: 20px;
+}
+.list-group-item{
+    border-left: none;
+    border-right: none;
+    border-color: #ececec;
+    padding: 0;
+}
+.love{
+    overflow: hidden;
+}
+.love a{
+    font-size: 14px;
+    float: left;
+    width: 120px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    background: #ececec;
+    color: #999999;
+}
+a.love_active{
+    background: #fda249;
+    color: #fff;
+}
+.activeLove{
+    color: #fda249;
+}
+/*content*/
+.listHead{
+    padding: 24px 0;
+    overflow: hidden;
+    border: 0;
+    border-bottom: solid 1px #f1f1f1;
+}
+.dialogue{
+    float: left;
+    margin-left: 20px;
+}
+.dialogue_content{
+    font-size: 16px;
+}
+.dialogue_time{
+    padding-top: 18px;
+    font-size: 14px;
+}

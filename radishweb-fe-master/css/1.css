@@ -1,0 +1,161 @@
+/*
+input:focus {  
+    outline: none!important;
+    border-color: #cfdc00 !important;  
+    box-shadow: 0 0 5px rgba(207, 220, 0, 0) !important;  
+border-radius: 5px !important; 
+}
+#logoTxt{
+	color:#fda249!important;
+	font-family:FZXKJW-GB1-0!important;
+	margin-left:100px;
+}
+.form-control{
+	outline: none!important;
+	border-color: #cfdc00 !important; 
+	
+
+}
+#input-search:focus{outline:none!important;appearance: none!important;border-width:0!important}
+#divForm:focus{outline:none!important;appearance: none!important;border-width:0!important}
+.nav-link{font-size:16px;font-color:black!important;}
+#demo{margin:0 auto!important}
+.nav3{margin:20px 0!important;}
+.form-group select{width:90px!important;height:30px!important;line-height:30px;font-size:14px;border:1px solid gray!important;padding:0!important;text-align:center!important;padding-left:13px!important;margin:2px!important;}
+#submit_then .form-group:focus{outline:none!important;appearance:none!important;border:0px solid transparent!important;border:0!important;}
+.searchbar ul{float:left!important}
+#select-group-2{margin-left:48px!important;}
+#select-group-3{margin-left:48px!important;}
+#submit_then text{font-size:10px!important;}
+#select-nav-btn{width:60px!important;height:30px!important;margin-left:8px!important;padding:6px 15px!important;background-color:#fda249!important}
+.navbar{border-bottom:0px solid transparent!important}
+select:focus{outline:none!important;border-color:transparent!important;box-shadow: 0 0 5px rgba(0,0,0, 0.3) !important;}
+#nav-all ul{background-color:#fda249;height:54px!important;}
+#nav-all a{padding-left:10px!important;padding-right:10px!important;color:#fff!important;padding:15px!important;}
+*/
+/**top-nav   login**/
+nav.signbar ul{
+	padding:0;
+  }
+  #logoTxt{
+	color: #fda249!important;
+	font-family:FZXKJW-GB1-0!important;
+  }
+  .indexSearch{
+	left:350px!important;
+	
+	border-radius:15px;
+  }
+  .indexSearch input:focus{
+	border:1px solid #fda249!important;
+	border-radius:16px!important
+  }
+  .indexSearch{
+
+  }
+  .indexSearch img{
+	height: 20px;
+	width: 20px;;
+	position: absolute;
+	top: 8px;
+	right: 12px;
+  }
+  .indexSearch input[name=content]{
+	font-family: Microsoft YaHei;
+	font-size:16px;
+	padding: 0 12px;
+	height: 34px;
+	width: 181px;
+	border-radius:16px;
+	outline:none;
+	border:1px solid #5e5e5e;
+  }
+  nav.nav-home{
+	padding:0!important;
+	border-bottom:1px solid #bdb8b8;
+	box-shadow:2px 2px 5px 2px #bdb8b8;
+	margin-bottom:3px;
+	height:70px;
+	left:-3px;
+	width:100%!important
+  }
+  #navbarDropdownMenuLink {
+	color:#fda249;
+  }
+  .navbar-expand-sm .navbar-nav .nav-link{
+	padding-left: 2.4rem;
+	padding-right: 0.5rem;
+  }
+  nav{
+	width:100%;
+	margin:0 auto;
+  }
+  @media only screen and (min-width: 1200px) {
+	input:focus {  
+		outline: none!important;
+		border-color: #717171 !important;  
+		box-shadow: 0 0 5px rgba(207, 220, 0, 0) !important;  
+		border-radius: 5px !important; 
+	}
+	#logoTxt{
+		color: #fda249!important;
+		font-family:FZXKJW-GB1-0!important;
+	}
+	.nav-home  .container{
+		padding-right:15px!important;
+	  }
+	  #divForm:focus{
+		  outline:none!important;
+		  appearance: none!important;
+		  border-width:0!important
+	  }
+	  .nav-link{
+		  font-size:16px;
+		  font-color:black;
+	  }
+	  #demo{
+		  margin:0 auto
+	  }
+	  .nav3{
+		  margin:20px 0;
+		}
+		.searchbar{
+			width:1000px!important
+		}
+	  .searchbar .btn-warning:hover{
+		border:0!important;
+		background-color:#fc9937!important
+	  }
+	  a.nav-link:hover{
+		color:#fda249!important;
+	  }
+	  nav.navbar div.container div.pull-right ul li a:hover{
+		color:#fda249!important
+	  }
+	  .navbar-light .navbar-nav .nav-link{
+		color:#333;
+		font-size:16px;
+		font-family: Microsoft YaHei;
+	  }
+	  .navbar-light .navbar-nav .i{
+		display:block;
+		height:16px;
+		width:1px;
+		margin:12px 4.5px;
+		background-color:#333
+	  }
+	  nav ul{
+		padding:0;
+	  }
+	  .navbar{
+		border-bottom:0;
+	  }
+	  /****   register   ****/
+	  .wrapper div.section{
+		  border:1px solid #2b2b2b;
+		  margin:50px 0;
+	  }
+}
+  @media (max-width: 1199px)  {
+	
+  }

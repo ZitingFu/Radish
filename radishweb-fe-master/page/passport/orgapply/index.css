@@ -1,0 +1,154 @@
+h3{
+    color:#fda249;
+    font-size:24px;
+    font-family: 'Microsoft YaHei';
+    text-align: center;
+    margin-bottom:20px;
+}
+div.content-border{
+    border:1px solid #dcdcdc;
+    width:450px;
+    
+    border-radius:5px;
+}
+.reg .titlebar{
+    padding-bottom:8px;
+}
+.user1{
+    color:#4492f5
+}
+.wrapper div.section{
+    margin-top:0;
+    padding-top:34px;
+}
+.registerImg {
+    margin-top:146px;
+}
+.btn-warning{
+    color:#333;
+}
+#form-create{
+    margin-left:17px;
+}
+.titlebar {
+    margin-left:60px;
+    width:335px;
+}
+.form-group{
+    margin-right:40px;
+    
+}
+.btn-warning{
+    color:#fff;
+}
+.btn-warning:hover{
+    color:#fff;
+}
+.form-control{
+    height:34px;
+}
+.p-w70{
+    width:193px;
+}
+#form-location:first-child{
+    margin:0;
+}
+#upload img{
+    margin-left:5px;
+}
+li.sampleImg img{
+    width:203px;
+    margin-left:10px;
+    margin-bottom:35px;
+}
+.form-control{
+    margin:0 auto;
+}
+
+li.form-group button{
+    height:35px;
+    padding:0;
+    border:0;
+    
+    background-color:#fda249;
+}
+li.form-group button:hover{
+    background-color:#fc9937;
+}
+.lastLi{
+    margin-bottom:60px;
+}
+#Search{
+    margin-left:27rem;
+}
+
+#logoTxt img{
+    max-width:121px;
+    width:121px!important;
+    height:20px!important;
+}
+
+@media(min-width:200px){
+    .registerImg{
+        width:0rem;
+    }
+    .wrapper{
+        width:600px;
+    }
+    #Search {
+        margin-left: 1rem;
+    }
+}
+@media(min-width:600px){
+    .registerImg{
+        width:0rem;
+    }
+    .wrapper{
+        width:100%
+    }
+}
+@media(min-width:768px){
+    .registerImg{
+        width:0rem;
+    }
+}
+@media(min-width:992px){
+    .registerImg{
+        width:25.53rem;
+    }
+}
+@media(min-width:1200px){
+    .registerImg{
+        width:32.53rem;
+    }
+}
+label,.select2-container .select2-choices .select2-search-field input, .select2-container .select2-choice, .select2-container .select2-choices{
+    color:#333;
+    height:31px;
+    line-height: 31px;
+    
+}
+.select2-chosen, .select2-choice>span:first-child, .select2-container .select2-choices .select2-search-field input{
+    padding:0 10px;
+}
+.form-control{
+    height:31px;
+    line-height: 31px;
+}
+    input::-webkit-input-placeholder { /* WebKit browsers */ 
+    font-size:1.06666rem;
+    color:#8a8a8a;
+    
+    } 
+    input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+    font-size:1.06666rem;
+    color:#8a8a8a;
+    } 
+    input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+    font-size:1.06666rem;
+    color:#8a8a8a;
+    } 
+    input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+    font-size:1.06666rem;
+    color:#8a8a8a;
+    }

@@ -1,0 +1,14 @@
+.listHead a{
+    display: inline-block;
+    width: 84px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #ececec;
+    font-size: 14px;
+    color: #999;
+}
+a.listActive{
+    color: #fff;
+    background: #fda249;
+}

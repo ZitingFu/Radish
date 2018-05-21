@@ -1,0 +1,179 @@
+.head-bar{
+    background: #f3f5f9;
+    padding: 20px 40px;
+    overflow: hidden;
+}
+.head-bar img{
+    float: left;
+}
+.session{
+    float: left;
+    color: #333333;
+    margin-left: 18px;
+}
+.session h3{
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+.session p span{
+    font-size: 14px;
+
+}
+.listHead a{
+    display: inline-block;
+    width: 56px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #ececec;
+    font-size: 14px;
+    color: #999;
+}
+a.listActive{
+    color: #fff;
+    background: #fda249;
+}
+.listHead{
+    border-bottom: 1px solid #ececec;
+}
+.w-914{
+    width: 91.4%
+}
+.show_img{
+    overflow: hidden;
+}
+.show_img img{
+    float: left;
+}
+.show_img img:last-child{
+    margin-right: 0;
+}
+
+.btn-outline{
+    background: #fff;
+}
+.btn-warning:hover{
+    background: #fda249;
+}
+
+
+
+.Cover{
+    /*遮罩层*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    background-color: rgba(0,0,0,.3);
+    display: none;
+}
+.Cover .m-title{
+    padding-left: 12px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #666666;
+    border-bottom:#c7c7c7 1px solid;
+}
+.Cover .m-title img{
+    height: 13px;
+    width: 13px;;
+    margin: 12px 12px 0 0;
+    float: right;
+    cursor: pointer;
+}
+#onMoney{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 140px;
+    margin-bottom: 27px;
+}
+#onMoney option{
+}
+.m-Cover .recharge{
+    overflow: hidden;
+    padding-top: 20px;
+    padding-left: 53px;
+}
+.Cover .m-Cover{
+    border-radius: 3px;
+    width: 470px;
+    margin: 227px auto 0 auto;
+    background: #fff;
+}
+
+
+/*打赏金币*/
+.m-list{
+    overflow: hidden;
+    padding: 30px 58px;
+}
+.m-list>span{
+    float: left;
+    margin-top: 4px;
+}
+.m-list ul{
+    width: 260px;
+    float: right;
+    margin-right: 22px;
+}
+.m-list ul li{
+    cursor: pointer;
+    float: left;
+    width: 70px;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 20px;
+    text-align: center;
+    border:solid 1px #c7c7c7;
+    color: #666666;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.m-list ul li:nth-child(4),.m-list ul li:nth-child(5),.m-list ul li:nth-child(6){
+    margin: 20px 20px 20px 0;
+}
+.m-list ul li:nth-child(3n){
+    margin-right: 0;
+}
+.m-list ul li.active{
+    border-color: #fda249;
+    color: #fda249;
+}
+.gold{
+    font-size: 14px;
+    margin-left: 72px;
+    width: 250px;
+    height: 28px;
+    padding-left: 9px;
+    border-radius: 3px;
+    border:1px solid #c7c7c7 ;
+}
+.goldInadequate{
+    margin: 19px 0 0 72px;
+    display: none;
+}
+.goldInadequate a{
+    color: #fda249;
+    text-decoration:underline;
+}
+
+/*密码输入框*/
+.m-password{
+    overflow: hidden;
+}
+.m-password > p{
+    margin: 29px 0;
+    text-align: center;
+}
+
+.m-Cover2{
+    display: none;
+}
+#Cover2 {
+    display: none;
+}
+

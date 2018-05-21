@@ -1,0 +1,11 @@
+div.pagebar ul{
+    border:0;
+    width:300px;
+}
+.pagebar ul li{
+   border:1px solid #e6e0e0
+}
+.pagebar ul li:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px;
+}

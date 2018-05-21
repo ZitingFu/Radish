@@ -1,0 +1,15 @@
+.activeLove{
+    color: #fda249;
+}
+.w-914{
+    width: 91.4%
+}
+.show_img{
+    overflow: hidden;
+}
+.show_img img{
+    float: left;
+}
+.show_img img:last-child{
+    margin-right: 0;
+}

@@ -1,0 +1,42 @@
+/* reset stylesheet */
+
+header, nav, aside, menu, figure, article, footer { display:block; }
+body, div, form, textarea, label, input, ul, ol, li, dl, dt, dd, em, p, span, a, img, h1, h2, h3, h4, h5, h6, tbody, tfoot, tr, th, td, pre, code, form, fieldset, legend, font { margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; }
+caption, th { text-align:left; }
+sup { vertical-align:text-top; }
+sub { vertical-align:text-bottom; }
+li { list-style:none; }
+a { cursor:pointer; }
+fieldset, img { border:none; }
+address, cite, dfn, em, var { font-style:normal; }
+input, textarea, select { font-family:inherit; font-size:inherit; font-weight:inherit; *font-size:100%; color:inherit; _color:#333; *color:#333; outline:none; }
+
+.cfix { zoom:1; }
+.cfix:before,.cfix:after { content:""; display:table; }
+.cfix:after { clear:both; }
+.fl { float:left; }
+.fr { float:right; }
+.cb { clear:both; }
+
+/* img align middle */
+.middle{ display:inline-block; height:100%; vertical-align:middle; }
+
+/* input & label align */
+.ver_check { width:13px; height:13px; vertical-align:-1px; *vertical-align:2px; _vertical-align:3px; }
+.ver_label { padding-left:3px; }
+
+/* FF button align middle */
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+	border:none; padding:0;
+}
+
+body { vertical-align:bottom; font-size:12px; font-family:Arial,SimSun; *font-family:Arial; color:#333; background:#fff; }
+a { text-decoration:none; color:#333;}
+a:hover { text-decoration:underline; color:#0080CB;}
+
+/* bold */
+.bold { font-weight:bolder;}

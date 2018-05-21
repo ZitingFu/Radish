@@ -1,0 +1,14 @@
+.mask-open .mask-wrapper {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, .4);
+	background-color: #fff\9;
+	filter: alpha(opacity=40);
+	background-image: url(/aidebole/source/admin/common/images/loading.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+}

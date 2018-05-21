@@ -1,0 +1,26 @@
+/*报错删除页 */
+div.error{
+    text-align: center;
+    margin-top: 140px;
+}
+div.error p{
+    padding: 0;
+    margin: 27px 0 0 0;
+}
+div.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 98px;
+    line-height: 98px;
+    font-size: 12px;
+    background: #f7f7f6;
+}
+.footer-bar{
+    font-size: 12px;
+    font-family: Microsoft Yahei;
+    color: #333;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+}

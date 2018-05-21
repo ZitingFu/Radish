@@ -1,0 +1,29 @@
+/*我的收藏列表*/
+.fav3List ul li{
+    padding-top: 20px;
+}
+.fav3List ul li .session{
+    margin-left: 80px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.fav3List ul li img{
+    cursor: pointer;
+}
+.fav3List ul li .session h3{
+    font-size: 16px;
+    color: #333333;
+    margin-top: 5px;
+}
+.fav3List ul li .session p{
+    margin-top: 20px;
+}
+.fav3List ul li .session p span{
+    font-size: 14px;
+}
+p.cancelled{
+    margin-top: -60px;
+}
+.wrapper div.section.wrap-content{
+    padding-top:0;
+}

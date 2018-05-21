@@ -1,0 +1,27 @@
+.mod_form .label { 
+    float:left;
+    margin-right:5px; 
+    width:120px; 
+    text-align:right; 
+}
+#write .label{
+     width:95px;
+}
+.wrapper {
+     width: 100%;
+     height: auto;
+     overflow: hidden;
+     margin: 0 auto;
+}
+.ipt_text1{
+    width: 1000px; 
+    height: 36px;
+    line-height:30px;
+}
+.feedback-title{
+    font-size: 16px;
+}
+#areaTxt{
+    height:400px;
+	font-size:20px;
+}

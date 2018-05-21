@@ -1,0 +1,131 @@
+.wrapper{
+    width:1152px;
+    
+}
+div.contentShow{
+    padding:40px 30px;
+    padding-top:94px;
+}
+.backgroundImg-reg2{
+    width:32.53rem;
+}
+.section{
+    padding-top:1px;
+}
+h3{
+    font-size: 1.6rem;
+    color:#fda249;
+    text-align: center;
+    margin-bottom:20px;
+}
+.btn-warning{
+    color:#333;
+}
+.m-b40{
+
+}
+div.titlebar{
+    width:270px;
+    margin-left: 3.2rem;
+    margin-top:36px;
+    padding-bottom:0;
+    
+}
+.reg .titlebar{
+   padding-bottom:8px;
+}
+div.content-border{
+    border:1px solid #dcdcdc;
+    width:24rem;
+   
+    border-radius:5px;
+}
+span.user1{
+    color:#4492f5;
+}
+.form-group{
+    margin-bottom:1.333rem;
+}
+.p-w70{
+    width:71.3%
+}
+.btn-warning{
+    background-color:#fda249;
+}
+.btn-warning:hover{
+    background-color:#fc9937;
+}
+li.form-group.form-name{
+    margin-bottom:28px;
+}
+.select2-container .select2-choice{
+    height:31px;
+}
+.form-control, .input-text, #user_login, #user_pass{
+    height:31px;
+}
+.lastLi{
+    margin-bottom:77px;
+}
+#name{
+    margin:2px auto;
+}
+@media(min-width:240px){
+    .backgroundImg-reg2{
+        width:0rem;
+    }
+    .wrapper{
+        width:100%
+    }
+    
+}
+@media(min-width:640px){
+    .backgroundImg-reg2{
+        width:0rem;
+    }
+    .wrapper{
+        width:100%
+    }
+    
+}
+@media(min-width:768px){
+    .backgroundImg-reg2{
+        width:19.53rem;
+    }
+}
+@media(min-width:992px){
+    .backgroundImg-reg2{
+        width:25.53rem;
+    }
+}
+@media(min-width:1200px){
+    .backgroundImg-reg2{
+        width:32.53rem;
+    }
+}
+label,.select2-container .select2-choices .select2-search-field input, .select2-container .select2-choice, .select2-container .select2-choices{
+    color:#333;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */ 
+font-size:1.06666rem;
+color:#8a8a8a;
+
+} 
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+font-size:1.06666rem;
+color:#8a8a8a;
+} 
+input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+font-size:1.06666rem;
+color:#8a8a8a;
+} 
+input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+font-size:1.06666rem;
+color:#8a8a8a;
+}
+.btn-warning{
+    color:#fff;
+}
+.btn-warning:hover{
+    color:#fff;
+}
