@@ -10,7 +10,6 @@
     activeBtn:{
         var a=$('ul.pagination li.active span');
         $(a).css('color','#fff');
-        console.log(smartyValue+'.......e.......')
         if(b.innerHTML==1){
             if(childHtml!==2){
                 $('.pagination').innerHTML('没有更多数据了！');

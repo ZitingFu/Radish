@@ -2,9 +2,9 @@
 <body>
 {include file="radishweb/widgets/nav/nav.tpl"}
 <div class="wrapper p-t30">
-    <div class="content w-840 pull-right wrap-content section">
+    <div class="content w-840 pull-right wrap-content section w-baifen80">
         <div class="titlebar m-t0 m-b20">
-            <div class="listHead"><a href="/radishweb/passport/myquestion" >我的发布</a>{if $session.type==2}<a href="/radishweb/passport/mynotice2" class="listActive">我的公告</a>{/if}</div>
+            <div class="listHead"><a href="/radishweb/passport/myquestion" >我的发布</a>{if $session.type==2}<a href="/radishweb/passport/mynotice2" class="listActive">我的公告</a>{/if}<a href="/radishweb/passport/claim">认领审核</a></div>
         </div>
         <div class="col-list m-t20">
             {if $question}
@@ -32,8 +32,8 @@
                             <!--<P class="m-b10"><label>联系人：</label>{$item.name} <label class="m-l20">联系电话：</label>{$item.phone}</P>-->
                         </a>
                         <a class="btn-a" href="/radishweb/notice/edit?id={$item.id}">修改信息</a>
-                        <a class="btn-a btn-delete" type="button" data-toggle="modal" data-target="#delete-confirm">删除信息</a>
-                        <a class="btn-a btn-delete" type="button" data-toggle="modal" data-target="#edit-confirm">{if $item.open ==0}关闭信息{else}开启消息{/if}</a>
+                        <a class="btn-a btn-delete" data-toggle="modal" data-target="#delete-confirm">删除信息</a>
+                        <a class="btn-a btn-delete" data-toggle="modal" data-target="#edit-confirm">{if $item.open ==0}关闭信息{else}开启消息{/if}</a>
                     </div>
                     <!--             </a>-->
                 </li>
@@ -112,6 +112,13 @@
 <!--FormValid-->
 <script type="text/javascript" src="/util/FormValid.js"></script>
 <!--select2-->
+<style>
+    @media (min-width: 1200px){
+        body .leftpop {
+            display: block;
+        }
+    }
+</style>
 <link rel="stylesheet" type="text/css" href="/libs/select2-3.5.2/select2.css" />
 <link rel="stylesheet" type="text/css" href="/libs/select2-3.5.2/select2-bootstrap.css" />
 <link rel="stylesheet" href="mynotice2.css">

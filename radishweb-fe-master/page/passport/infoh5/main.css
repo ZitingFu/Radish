@@ -1,0 +1,363 @@
+body {
+  font-size: 14px;
+  font-family: "Microsoft Yahei";
+  color: #333333;
+}
+body,div,p,h1,h2,h3,h4,h5,h6,ul,li {
+	margin: 0;
+	padding: 0;
+}
+*{
+	margin: 0;
+	padding: 0;	
+}
+body span{
+	display:inline-block;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+	vertical-align: bottom;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+.clearFix:after{
+ clear:both;
+ display:block;
+ visibility:hidden;
+ height:0;
+ line-height:0;
+ content:'';
+}
+.f-left {
+	float: left;
+}
+.f-right {
+	float: right;
+}
+
+
+.videoMp4{
+	max-width: 100% !important;
+}
+
+i{	
+	display:inline-block;
+	font-style:normal;
+}
+
+
+.message {
+	/*padding: 10px;*/
+	border-bottom: 10px solid #f3f5f9;
+}
+.message div.message_desc p {
+	font-size: 16px;
+	/*padding: 10px 0;*/
+	line-height: 24px;
+}
+.message div.message_desc .img_box {
+	display: inline-block;
+	position: relative;
+	width: 31%;
+	height: 29vw;
+	overflow: hidden;
+	margin-left: 1%;
+	margin-bottom: 1%;
+}
+.message div.message_desc .img_box:nth-child(4) {
+	
+}
+.message div.message_desc .img_box img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+}
+.message>div:last-child {
+	/*border-top: 1px solid #c7c7c7;*/
+	/*padding: 0px 3px 5px 3px;*/
+}
+.message>div:last-child p:first-child {
+	color: #50c4ed;
+}
+.message>div:last-child p:last-child {
+	color: #b6b6b6;
+}
+
+.people {
+	padding:10px 10px 0 10px;
+}
+.people>div p {
+	font-size: 16px;
+	color: #323232;
+}
+.people>div p:last-child {
+	margin-top: 5px;
+	font-size: 14px;
+	color: #505050;
+}
+
+.comment {
+	border-bottom: 10px solid #f3f5f9;
+}
+.comment .title {
+	padding: 10px;
+	color: #999;
+	background-color: #f3f5f9;
+	font-size: 16px;
+}
+.comment .comment-list {
+	padding: 15px 10px 10px 10px;
+	border-bottom: 1px solid #f3f5f9;
+}
+.comment .comment-list:last-child {
+	border-bottom: none;
+}
+.comment .comment-list .comment_man>img , .people>img {
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.comment .comment-list .comment_man .support {
+	display: inline-block;
+	vertical-align: sub;
+	width: 20px;
+	height: 20px;
+	background: url('/images/zan.png') no-repeat 3px 1px;
+	background-size: cover;
+}
+.comment .comment-list .comment_man div.comment_man_name {
+	margin: 5px 0;
+}
+.comment .comment-list .comment_man div.comment_man_name p:last-child {
+	font-size: 12px;
+	color: #b6b6b6;
+	margin-top: 5px;
+}
+.comment .comment-list .comment_man div:last-child {
+	margin: 12px 0;
+}
+.comment .comment-list .comment_mes {
+	margin: 5px 0 0 60px;
+	line-height: 24px;
+	font-size: 16px;
+	color: #323232;
+}
+.download{
+	box-shadow: 2px 5px 41px 2px #cfcece;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 18px;
+	background-color: #fff;
+	margin: 0;
+	border: none;
+	outline: none;
+}
+.download button {
+	width: 85px;
+	border-radius: 3px;
+    height: 36px;
+	color: #fff;
+	font-size: 12px;
+	background-color: #fc9937;
+	margin: 0;
+	border:none;
+	z-index: 888;
+	outline: none;
+	float: right;
+	margin:12px 27px; 
+}
+/*查看大图*/
+.big-img {
+	display: none;
+	background: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 111;
+}
+.big-img img {
+	position: absolute;
+	top: 50%; left: 50%;  
+  -webkit-transform: translate(-50%,-50%);  
+	-ms-transform: translate(-50%,-50%);  
+	transform: translate(-50%,-50%);  
+	width: 100%;
+	z-index: 999;
+}
+.big-img span {
+	color: #fff;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	font-size: 18px;
+	z-index: 1000;
+}
+.uu{
+	display: none;
+  position: absolute;
+  position: fixed;
+  z-index: 9999;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: url("../../../images/bk.png") center top no-repeat;
+  background-size: cover;
+  opacity:0.9;
+  height: 100%;
+
+}
+.message_fiattime{
+	border-bottom:1px solid #ddd; 
+	border-top:1px solid #ddd; 
+}
+body .morder_bottom{
+	margin-bottom:0px; 
+	padding-bottom:0px; 
+}
+.message_tiao{
+	padding:13px 25px; 
+	border-bottom:1px solid #ddd; 
+}
+.conterr{
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+.conterr .left{
+	width: 80%;
+	padding-bottom:5px;
+	border-bottom:1px solid #f3f5f9;
+}
+
+.conterr .people{
+	padding-top:0px;
+}
+.Release{
+	padding:15px 0;
+}
+.Release{
+	border-bottom: 1px solid #f3f5f9;
+}
+.phone{
+	border-bottom: 10px solid #f3f5f9;
+}
+.Release table th,.Release table td{
+	text-align: center;
+	font-size: 12px;
+}
+.Release table th{
+	color: #999999;
+	font-weight: normal;
+}
+.Release .table>tbody>tr>td{
+	border: 1px solid #fff;
+	padding:3px; 	
+}
+.Release .table{
+	margin-bottom:0px; 
+}
+.phone{
+	padding:15px 12px;
+	/*margin:0 12px;  */
+	/*border-top:1px solid #f3f5f9; */
+	/*border-bottom:5px solid #f3f5f9; */
+}
+.phone,.Release{
+	/*margin:0 10px;*/
+}
+.gen_name{
+	text-align: center;
+	font-size: 12px;
+	border-radius:13px; 
+	color:#005bc8;
+	height: 25px;
+	padding:0 8px; 
+	line-height: 25px;
+    background-color: #f3f5f9;
+}
+.gen_name img{
+	width:13px;
+	position: relative;
+	top:-1px;
+}
+.conterr .message{
+	padding:5px 10px; 
+}
+.conterr .avatar{
+	border-radius:50%;
+	width:24px;
+}
+.ranking{
+	border-radius:15px; 
+	padding:1px 5px; 
+	background-color:#fda249; 
+	color: #fff;
+	line-height:21px;
+	font-size:12px; 
+	display:inline-block;
+	text-align: center;
+	width: 100px;
+}
+.outfit{
+	color:#fff;
+	background-color:#cecece; 
+	font-size: 12px;
+	padding:0 2px; 
+	border:1px solid #ddd;
+}
+#new-time,.y-expire,.timespan{
+	display: none
+}
+.h-box,#id_{
+	display:none;
+}
+body h5,body h4,body h2{
+	color: #333333;
+	font-weight: normal;
+}
+body h5{
+	font-size: 15px;
+	margin:12px 12.5px;
+}
+body h4{
+	font-size: 15px;
+	margin-top:0; 
+	margin-bottom:19px; 
+}
+body h2{
+	font-size: 15px;
+	margin-top: 0px; 
+}
+.xian{
+	background-color:#fc9937;
+	width:3px;
+	height: 10.5px;
+	border-radius:5px; 
+	margin-right:6px; 
+}
+.phone p{
+	margin-left:11px; 
+}
+
+.indexnone{
+	display:none;
+}

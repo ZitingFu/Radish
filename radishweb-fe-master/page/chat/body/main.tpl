@@ -1,8 +1,8 @@
 {include file="radishweb/widgets/header/header.tpl"}
 <body>
 {include file="radishweb/widgets/nav/nav.tpl"}
-<div class="wrapper p-t30">
-    <div class="content w-830 pull-right wrap-content section">
+<div class="wrapper p-t30 paddingLg">
+    <div class="content w-830 pull-right wrap-content section w-baifen80">
         <div class="titlebar m-t0">
             <label>发送私信</label>
         </div>
@@ -15,7 +15,7 @@
                 <textarea name="body" id="forup" class="form-control p-w100 m-t5 txt1" rows="8" maxlength="500" placeholder="发送给：{$to.name}"></textarea>
                 <span class="txtbar1">(0/500)</span>
             </div>
-            <button type="button" class="btn btn-warning btn-primary pull-right w-217 h-36">发送</button>
+            <button type="button" class="btn btn-warning btn-primary pull-right w-217 h-36" style="width: 224px;">发送</button>
         </form>
         {if $list}
         <ul class="list-group">

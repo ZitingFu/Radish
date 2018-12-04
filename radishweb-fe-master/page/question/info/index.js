@@ -48,7 +48,6 @@
         $(this).find('span').html(num-1);
       }
       $.post('/radishweb/question/editlike',{id:id}, function(data) {
-        //console.log(data);
       });
     });
     var regs=/\S/;
@@ -109,7 +108,6 @@
         $("#note button.btn-primary").attr("disabled","true");
         ybb.msgs('举报成功', 'success');
         setTimeout(function () {
-          console.log(data)
           location.reload();
         }, 1000);
       },error:function(){
@@ -162,7 +160,6 @@
         imgDataSrc.push(pimgImg.eq(l).attr('src'))
       }
     })();
-    console.log(imgDataSrc);
 
     //图片预览
     /*
@@ -267,15 +264,30 @@
       }
       if( favId == '99'){
         favId='0';
-        $(this).html('已收藏').removeClass('btn-outline');
+        $(this).html('已收藏');
+        $(".collection_img")[0].src="icon-s.png"
         favAjax(userId,1);
       }else {
         favId='99';
-        $(this).html('收藏').addClass('btn-outline');
+        $(this).html('收藏');
+        $(".collection_img")[0].src="icon-sc.png"
+        favAjax(userId,1);
+      }
+      location.reload()
+    });
+
+    $('.collection_img').on('click',function(){
+        location.reload()
+      if( favId == '99'){
+        favId='0';
+        $(this)[0].src="icon-s.png"
+        favAjax(userId,1);
+      }else {
+        favId='99';
+         $(this)[0].src="icon-sc.png"
         favAjax(userId,1);
       }
     });
-
 
 
 
@@ -401,4 +413,198 @@
 
 
   })
+
+
+  
 })(window, $, undefined);
+
+ $.ajax({
+        type:"OPTIONS",
+        url:"window.location.href",
+        async:false,
+        error:function(a){
+            time = new Date(a.getResponseHeader("Date"));
+            year = time.getFullYear();
+            // console.log(123,time)
+                
+            //以下是通过三元运算对日期进行处理,小于10的数在前面加上0
+            month = (time.getMonth()+1)<10?("0"+(time.getMonth()+1)):(time.getMonth()+1)
+            date = time.getDate()<10?("0"+time.getDate()):time.getDate();
+            hours = time.getHours()<10?("0"+time.getHours()):time.getHours();
+            minutes = (time.getMinutes()<10?("0"+time.getMinutes()):time.getMinutes());
+            seconds = (time.getSeconds()<10?("0"+time.getSeconds()):time.getSeconds());
+                
+            //拼成自己想要的日期格式，2018-01-15 19:05:33
+            time = year+"/"+month+"/"+date+" "+hours+":"+minutes+":"+seconds;
+             // console.log(time)
+             
+            // 时间转时间戳
+            var nowTime = time;
+            var thisTime = nowTime;
+            thisTime = thisTime.replace(/-/g, '/');
+            var new_time = new Date(thisTime);
+            new_time = new_time.getTime()/1000;
+
+            //给相应的位置赋值
+            setInterval(function (){
+             new_time =  new_time + 1
+              function add0(m){return m<10?'0'+m:m }
+                function format(new_time){
+                    //shijianchuo是整数，否则要parseInt转换
+                    var time = new Date(new_time*1000);
+                    var y = time.getFullYear();
+                    var m = time.getMonth()+1;
+                    var d = time.getDate();
+                    var h = time.getHours();
+                    var mm = time.getMinutes();
+                    var s = time.getSeconds();
+                    return y+'/'+add0(m)+'/'+add0(d)+' '+add0(h)+':'+add0(mm)+':'+add0(s);
+                }
+                // console.log("456",format(new_time))
+                 $("#new-time").html( format(new_time))
+            },1000)
+        }
+    });
+
+
+var urlid = (window.location.search.split("=")[1])
+$.ajax({
+    url:"/radishweb/question/info?id="+urlid,
+    type:"get",
+    async:false,
+    data:{
+        action:"json"
+    },
+    success:function(data){
+      setInterval(function (){
+        var create_time =  Number(data.data.info.timestamp)
+        console.log(data.data.info.food_cate.expire)
+        var expire = Number(data.data.info.food_cate.expire*86400)
+        var timestamp = create_time+expire
+        // console.log("天数",expire,"时间戳",create_time)
+            //截止时间
+            function add0(m){return m<10?'0'+m:m }
+            function format(timestamp){
+                //shijianchuo是整数，否则要parseInt转换
+                var time = new Date(timestamp*1000);
+                var y = time.getFullYear();
+                var m = time.getMonth()+1;
+                var d = time.getDate();
+                var h = time.getHours();
+                var mm = time.getMinutes();
+                var s = time.getSeconds();
+
+                return y+'/'+add0(m)+'/'+add0(d)+' '+add0(h)+':'+add0(mm)+':'+add0(s);
+            }
+             $(".y-expire").html(data.data.info.food_cate.expire)
+              $(".y-end").html(format(timestamp))
+            //最终
+             end_time = $(".y-end").html()
+            //现在
+            new_time1 = $("#new-time").html()
+
+            date1 = new Date(new_time1)
+
+            date2 = new Date(end_time)
+            s1 = date1.getTime();
+            s2 = date2.getTime();
+            total_end = (s2 - s1)/1000;
+            timeCountDown(total_end)
+            function timeCountDown(total){
+                var day = parseInt(total / (24*60*60));//计算整数天数
+                var afterDay = total - day*24*60*60;//取得算出天数后剩余的秒数
+                var hour = parseInt(afterDay/(60*60));//计算整数小时数
+                var afterHour = total - day*24*60*60 - hour*60*60;//取得算出小时数后剩余的秒数
+                var min = parseInt(afterHour/60);//计算整数分
+                var afterMin = total - day*24*60*60 - hour*60*60 - min*60;//取得算出分后剩余的秒数
+                    days = checkTime(day); 
+                    hours = checkTime(hour); 
+                    minutes = checkTime(min); 
+                    seconds = checkTime(afterMin);
+                $(".y-d").html(days)
+                $(".y-h").html(hours)
+                $(".y-m").html(minutes)
+                $(".y-s").html(seconds)
+            }
+            function checkTime(i){ //将0-9的数字前面加上0，例1变为01 
+              if(i<10)   
+              { 
+                i = "0" + i; 
+              } 
+              return i; 
+            } 
+            if($(".y-expire").html()==0){
+                $(".y-s").closest(".ma-le15").find(".pull-right").addClass("indexnone")
+                $(".y-s").closest(".ma-le15").find(".y-time").css({
+                    "display":"inline-block"
+                })
+            }
+            else{
+                $(".y-s").closest(".ma-le15").find(".ma_r19").removeClass("indexnone")
+                 $(".y-s").closest(".ma-le15").find(".tong").removeClass("indexnone")
+            }
+            
+      },1100)
+    }
+})
+    // if( $(".y-d").html() == 00 && $(".y-h").html() == 00 &&  $(".y-m").html()== 00 &&  $(".y-s").html()== 00){
+    //    $(".y-s").closest(".ma-le15").find(".pull-right").addClass("indexnone")
+    //     $(".y-s").closest(".ma-le15").find(".y-time").css({
+    //         "display":"inline-block"
+    //     })
+    //     window.clearTimeout(t);   
+    // }
+    
+// 身份证
+    // function isCardNo(card) {  
+    //    // 身份证号码为15位或者18位，15位时全为数字，18位前17位为数字，最后一位是校验位，可能为数字或字符X  
+    //    var reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;  
+    //    if(reg.test(card) === false) {  
+    //        alert("身份证输入不合法");  
+    //        return  false;  
+    //    }
+    // }  
+
+   // $("#identity").blur(function(){
+   //    isCardNo($(this).val())
+   // })
+
+//认领
+   $("#identity_sub123").click(function(){
+    var infoid = $("#infoid").html()
+    var user =$("#uer").val()
+    var tel =$("#tel").val()
+    var merark =$("#merark").val()
+    var user_idcard =$(".user_idcard").val()
+    var reg1 = /^1[3-8]{1,}[0-9]{9}$/
+    var reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;  
+       if(reg.test(user_idcard) === false) {  
+           alert("身份证输入不合法");  
+       }
+       else if(reg1.test(tel) === false){
+           alert("手机号不正确")  
+       }
+       else{
+          $.ajax({
+            url:"/radishweb/question/claim",
+            type:"post",
+            data:{
+              q_id:infoid,
+              user:user,
+              tel:tel,
+              user_idcard:user_idcard,
+              remark:merark
+            },
+            success:function(data){
+              if(data.flag==0){
+                location.reload()
+              }
+              else{
+                alert("请核对信息是否正确，在提交")
+              }
+            }
+          }) 
+       }
+      
+    
+   })

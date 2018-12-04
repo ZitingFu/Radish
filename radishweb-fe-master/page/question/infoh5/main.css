@@ -7,6 +7,10 @@ body,div,p,h1,h2,h3,h4,h5,h6,ul,li {
 	margin: 0;
 	padding: 0;
 }
+*{	
+	margin: 0;
+	padding: 0;	
+}
 a {
   cursor: pointer;
   text-decoration: none;
@@ -43,14 +47,16 @@ input:-webkit-autofill {
 
 
 
-
-.message {
-	padding: 10px;
-	border-bottom: 10px solid #f3f5f9;
+.banxin{
+	margin:0 8px; 
 }
-.message div.message_desc p {
-	font-size: 16px;
-	padding: 10px 0;
+.message {
+	/*padding: 10px;*/
+	border-bottom:10px solid #f3f5f9;
+}
+.message p {
+	font-size: 14px;
+	padding: 3px 12px;
 	line-height: 24px;
 }
 .message div.message_desc .img_box {
@@ -61,6 +67,9 @@ input:-webkit-autofill {
 	overflow: hidden;
 	margin-left: 1%;
 	margin-bottom: 1%;
+}
+.people p{
+	font-size: 14px;
 }
 .message div.message_desc .img_box:nth-child(4) {
 	
@@ -75,19 +84,16 @@ input:-webkit-autofill {
 	-o-transform: translate(-50%,-50%);
 	-moz-transform: translate(-50%,-50%);
 }
-.message>div:last-child {
-	border-top: 1px solid #c7c7c7;
-	padding: 15px 3px 5px 3px;
-}
 .message>div:last-child p:first-child {
-	color: #50c4ed;
+	color: #000;
+	font-size: 14px;
 }
 .message>div:last-child p:last-child {
 	color: #b6b6b6;
 }
 
 .people {
-	padding: 10px;
+	/*border-top: 1px solid #c7c7c7;*/
 }
 .people>div p {
 	font-size: 16px;
@@ -95,7 +101,7 @@ input:-webkit-autofill {
 }
 .people>div p:last-child {
 	margin-top: 5px;
-	font-size: 14px;
+	font-size: 12px;
 	color: #505050;
 }
 
@@ -144,20 +150,34 @@ input:-webkit-autofill {
 	font-size: 16px;
 	color: #323232;
 }
-
-.download button {
+.download{
+	box-shadow: 2px 5px 41px 2px #cfcece;
 	position: fixed;
 	bottom: 0;
-	
 	width: 100%;
 	color: #fff;
 	font-size: 18px;
-	background-color: #fc9937;
-	opacity: 0.85;
-	padding: 12px 10px;
+	background-color: #fff;
+	padding: 6px 10px;
 	margin: 0;
 	border: none;
 	outline: none;
+	height: 60px;
+	box-sizing: border-box;
+}
+.download button {
+	width: 80px;
+	border-radius: 3px;
+    height: 35px;
+	color: #fff;
+	font-size: 12px;
+	background-color: #fc9937;
+	margin: 0;
+	border:none;
+	z-index: 888;
+	outline: none;
+	float: right;
+	margin:12px 27px; 
 }
 
 /*查看大图*/
@@ -202,4 +222,98 @@ input:-webkit-autofill {
   opacity:0.9;
   height: 100%;
 
+}
+.message_fiattime{ 
+	border-bottom:1px solid #f4f4f4;
+	/*opacity: 0.3; */
+}
+body .morder_bottom{
+	margin-bottom:0px; 
+	padding-bottom:0px; 
+}
+.message_tiao{
+	padding:10px 0; 
+	border-bottom:1px solid #ddd; 
+}
+.conterr{
+	/*margin-top:10px;*/
+	margin-bottom: 40px;
+}
+.conterr .people{
+	margin-top:10px;
+	width: 100%;
+	box-sizing: border-box;
+	padding-bottom:5px;
+	border-bottom:1px solid #faf2f2;
+}
+.conterr .people:last-child{
+	border-bottom:1px solid #fff;
+}
+.conterr .people{
+	padding-top:0px;
+}
+.left{
+	width: 80%;
+}
+.name{
+	text-align: center;
+	border-radius:13px; 
+	font-size: 12px;
+	color:#005bc8;
+	height: 25px;
+    background-color: #f3f5f9;
+    display:block;
+    padding:0 8px; 
+}
+.name img{
+	width:13px;
+	position: relative;
+	top:-5px;
+}
+.nnone{
+	display: none;
+}
+#new-time,.y-end,.y-expire{
+	display: none;
+}
+.colock{
+	width:12px;
+	position: relative;
+	left: 0;
+	bottom:6px;
+}
+.message_desc p{
+	font-size:14px;
+}
+.option{
+	width: 12px;
+	position:relative;
+	top:-5px;
+
+}
+#id_{
+	display:none;
+}
+.clock{
+	color:#fc9937;
+	font-size: 12px;
+	border-bottom:1px solid #e0e0e0; 
+	padding-left:12px; 
+}
+.message .user_name_bottom p{
+	  padding:0; 
+	  margin-top:0px;
+}
+.user_name_top{
+	padding:14px 12px; 
+	border-top:1px solid #e0e0e0; 
+}
+.radiu{
+	border-radius: 50%;
+	background-color:#999999;
+	width: 2px;
+	height: 2px;
+	display:inline-block;
+	position: relative;
+	top:-3px;
 }

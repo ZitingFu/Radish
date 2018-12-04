@@ -15,7 +15,7 @@
                         {if $session.avatar.b}
                         <img src="{$session.avatar.b}" class="pull-left imgWrap" width="60" height="60">
                         {else}
-                        <img src="/images/avatar2.jpg" class="pull-left imgWrap" width="60" height="60">
+                        <img src="1.png" class="pull-left imgWrap" width="60" height="60">
                         {/if}
                         <div class="info pull-right p-w91">
                             <p> {$item.user_name}<label class="pull-right">{$item.time}</label> </p>
@@ -37,7 +37,9 @@
             {/if}
         </div>
     </div>
-    {include file="radishweb/widgets/nav/usernav-left.tpl"}
+    <div id="left">
+         {include file="radishweb/widgets/nav/usernav-left.tpl"}
+    </div>
 </div>
 {include file="radishweb/widgets/page/page.tpl"}
 <link rel="stylesheet" href="listbytype.css">

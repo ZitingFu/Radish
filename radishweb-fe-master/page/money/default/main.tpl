@@ -21,7 +21,12 @@
             <div class="listF"><span>时间</span><span>金额</span><span>类型</span><span>详情</span></div>
             <ul class="recordList">
                 {foreach from=$list key=i item=item}
-                <li><span>{$item.create_time}</span><span>{if $item.type==3}{if $item.from_passid ==0}{$item.money}{/if}{/if} {if $item.type==2}{$item.money}{/if}  {if $item.type ==1}{if $session.id==$item.from_passid}{$item.price}{/if} {/if}  {if $item.type ==1}{if $session.id==$item.to_passid}{$item.money}{/if} {/if} </span><span>{if $item.type==1}打赏{else if $item.type==2}提现{else if $item.type==3}充值{/if}</span><span>{if $item.type==3}{if $item.from_passid ==0}用户充值{$item.money}金币{/if}{/if} {if $item.type==2}用户提现{$item.money}金币{/if}  {if $item.type ==1}{if $session.id==$item.from_passid}您打赏给{$item.to_name}{$item.price}金币{/if} {/if}  {if $item.type ==1}{if $session.id==$item.to_passid}{$item.from_name}打赏给您{$item.money}金币{/if} {/if}</span></li>
+                <li>
+                    <span>{$item.create_time}</span>
+                    <span>{if $item.type==3}{if $item.from_passid ==0}{$item.money}{/if}{/if} {if $item.type==2}{$item.money}{/if}  {if $item.type ==1}{if $session.id==$item.from_passid}{$item.price}{/if} {/if}  {if $item.type ==1}{if $session.id==$item.to_passid}{$item.money}{/if} {/if} </span>
+                    <span>{if $item.type==1}打赏{else if $item.type==2}提现{else if $item.type==3}充值{/if}</span>
+                    <span>{if $item.type==3}{if $item.from_passid ==0}用户充值{$item.money}金币{/if}{/if} {if $item.type==2}用户提现{$item.money}金币{/if}  {if $item.type ==1}{if $session.id==$item.from_passid}您打赏给{$item.to_name}{$item.price}金币{/if} {/if}  {if $item.type ==1}{if $session.id==$item.to_passid}{$item.from_name}打赏给您{$item.money}金币{/if} {/if}</span>
+                </li>
                 {/foreach}
                 {include file="radishweb/widgets/page/page.tpl"}
             </ul>
@@ -116,5 +121,10 @@
     {include file="radishweb/widgets/nav/usernav-left.tpl"}
 
 </div>
+<style>
+    body .leftpop{
+        display: block;
+    }
+</style>
 <script src="default.js"></script>
 {include file="radishweb/widgets/footer/footer.tpl"}

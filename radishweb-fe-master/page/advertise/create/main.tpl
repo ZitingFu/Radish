@@ -64,28 +64,20 @@
 					<a href="/radishweb/index/about">关于我们</a>
 					<a href="/radishweb/index/manual">使用说明</a>
 					<a href="/radishweb/advertise/create" class="listActive">帮助与反馈</a>
+					<a href="/radishweb/index/download">物料下载</a>
 				</div>
 			</div>
 			<!--<div class="titlebar m-b30">-->
 				<!--<div class="listHead"><a href="/radishweb/notice/create" class="listActive">关于我们</a><a href="/radishweb/notice/create">使用说明</a></div>-->
 			<!--</div>-->
 			<div class="">
-
-                
                 <div id="" class="feedback-title">
                     <i class=""></i>
-                    <p>您好，我是<span id="">小萝卜PC端</span>产品经理，欢迎您给我们提产品的使用感受和建议！</p> 
+                    <p><span id=""></span>请留下您的反馈意见，帮助我们改进。</p> 
                 </div>
-                
-            
-            
                 <form id="form-create">
                     <div class="form-group form-content ">    
-                    <textarea style="font-size:15px" name="content" id="areaTxt" class="container" maxlength="500" style=""  placeholder="感谢您给我们提出建议。
-抱歉我们不能逐一回复您的意见。
-您的感受和建议一旦在此发表，即表示您同意我们可无偿参考您的感受和建议来优化我们的产品和服务。
-若您有商业合作意向，请联系公司相关业务部门。
-联系方式：****"></textarea>
+                    <textarea style="font-size:15px" name="content" id="areaTxt" class="container" maxlength="500" placeholder="请留下您的反馈意见，帮助我们改进" style="padding-left: 5px"></textarea>
  					<span class="txtbar1">(0/500)</span>
                     <input class="pull-right " type="button" id="textareaBtn"  value="提交" style="padding:3px 8px;">
                    

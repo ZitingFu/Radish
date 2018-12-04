@@ -1,0 +1,58 @@
+.ma_r76{
+	margin-right: 76px
+}
+.ma_r19{
+	margin-right:19px
+}
+.Reverse_btn{
+	color:#fff;width:65px;height:32px;background-color:#0a1825;border-radius: 6px;
+}
+.Reverse_Smallbtn{
+	color:#fff;width:30px;height:32px;background-color:#0a1825;border-radius: 6px;
+}
+.Reverse_span{
+	position: relative;bottom: -11px; margin-left: 7px;
+}
+.indexnone{
+	display: none;
+}
+#contentImgDiv img+img{
+	margin-left:14.5%;
+}
+#contentImgDiv img{
+	margin-bottom:16px; 
+}
+.index{
+	display: none;
+}
+.xian{
+	background-color:#a0a0a0;width:60px;height:1px;
+}
+body .aimg{
+    display: inline-block;
+    width: 80px;
+    height:80px;
+    /*background: red;*/
+    position: relative;
+    top: -88px;
+    right: -8px;
+}
+.renling{color:#333;font-size:0.9rem;margin:-10px 27px 0 27px;}
+@media (max-width:480px){
+	body .dd-f0{
+		padding-left:0px; 
+	}
+	body .mm-f0{
+		margin-left:0px; 
+	}
+	.y-center{
+		display: block;
+	}
+	.queding{
+		float: right;
+	}
+	.renling{margin:0px 27px 0 27px;}
+	.tong{display: none;}
+	.ma_r19{margin-right:0;float: left; }
+	body .xian {width: 0;}
+}

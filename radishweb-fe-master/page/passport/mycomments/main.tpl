@@ -1,8 +1,8 @@
 {include file="radishweb/widgets/header/header.tpl"}
 <body>
   {include file="radishweb/widgets/nav/nav.tpl"}
-  <div class="wrapper p-t30">
-    <div class="content w-930 pull-right section wrap-content">
+  <div class="wrapper p-t30 paddingLg">
+    <div class="content w-930 pull-right section wrap-content w-baifen80">
       <div class="titlebar m-t0 m-b20">
         <div class="listHead"><a href="/radishweb/passport/mycomments" class="listActive">信息评论</a>{if $session.type==2}<a href="/radishweb/passport/mynoticecomments">公告评论</a>{/if}</div>
       </div>

@@ -34,7 +34,6 @@
       $('tr.fl1').each(function(e){
         var url = $(this).find('input.aaa1I').val();
         var data = $(this).find('label.aaa1L').html();
-        console.log(url,data);
         html += '<img src="'+url+'">';
         imgdata.push(data);
       });
@@ -166,7 +165,9 @@
         $('#type-input').val('1'); 
       }
     });
-    
+    var ticket = null
+    var randstr = null
+   
     ybb.ajaxSubmit({
       url: '/radishweb/question/create',
       form: '#form-create',
@@ -180,14 +181,41 @@
         'assoc_id': /^1[3-9]{1}[0-9]{9}$/ig | /^0\d{2,3}-?\d{7,8}$/,
         'location': /\S/,
         'type': /\S/,
-        'sid-type': /\S/
+        'sid-type': /\S/,
+        'is_rich':/\S/,
+        'ticket':/\S/,
+        'randstr':/\S/
+
       },
       
       done: function (data) {
-        ybb.msgs('发布信息成功！爱心值+1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   5秒后自动跳转首页', 'success');
-        setTimeout(function () {
-          location.href = '/radishweb/index/index';
-        },5000)
+        ybb.msgs('发布信息成功！爱心值+1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5秒后自动跳转首页', 'success');
+        var ads = data.ads
+        var money = data.money
+        $(".fdaea2").html(money)
+        if(ads.length == 0){
+          $(".Success_box").css({
+            "display":"none"
+          })
+          $(".w-268").css({
+            "margin-top":"20"
+          })
+        }
+        else{
+          for(var i=0;i<ads.length;i++){
+            var newSuccess = $(".SU").clone(true)
+              newSuccess.removeClass("SU")
+              newSuccess.addClass("Success")
+              newSuccess.find(".Success_compony_name").html(ads[i].compony_name)
+              newSuccess.find(".Success_compony_brief").html(ads[i].compony_brief)
+              newSuccess.find(".Success_logo")[0].src = ads[i].logo.s
+              newSuccess.appendTo($(".Success_box"))
+          }
+          $(".SU").remove()
+        }
+        // setTimeout(function () {
+        //   // location.href = '/radishweb/index/index';
+        // },5000)
         
       }
     });
@@ -220,6 +248,7 @@
                  var unit_two = document.getElementById("unit_two");
                  var s_id = document.getElementById("s_id");
                  var siteTwo = document.getElementById("siteTwo");
+
                  if(forup.value==null || forup.value==""){
                      ybb.msgs("请完整输入内容",'warning');
                     forup.focus();
@@ -242,7 +271,6 @@
                   ybb.msgs("请选择二级类型",'warning');
                   return;
                 }
-                console.log(s_id[0].value)
                 if(s_id.value==null || s_id.value=="" || s_id.value==0){
                   ybb.msgs("请选择场所",'warning');
                   return;
@@ -256,7 +284,7 @@
     });
     
     $('#pictureBtn').on('click',function(){
-      var forup = document.getElementById("forup");
+                 var forup = document.getElementById("forup");
                  var province = document.getElementById("province");
                  var city = document.getElementById("city");
                  var area = document.getElementById("area");
@@ -286,7 +314,6 @@
                   ybb.msgs("请选择二级类型",'warning');
                   return;
                 }
-                console.log(s_id[0].value)
                 if(s_id.value==null || s_id.value=="" || s_id.value==0){
                   ybb.msgs("请选择场所",'warning');
                   return;
@@ -317,3 +344,74 @@
 
   })
 })(window, $, undefined);
+$(".know").click(function(){
+    window.location.href = "/radishweb/index/index"
+})
+
+$("#israch").change(function(){
+    var  parent = $(this).val()
+  $.ajax({
+    url:"/radishweb/question/foodcate",
+    type:"post",
+    data:{
+       parent:parent
+    },
+    success:function(data){
+       var foodcate = data.data.foodcate
+      if(JSON.stringify(foodcate) === '[]'){
+        $("#israch").attr("name","is_rich")
+         $("#type").attr("name","")
+         $(".form-s_name").css({
+          "display":"none"
+        })
+      }
+      else{
+        $("#israch").attr("name","")
+        $("#type").attr("name","is_rich")
+        $("#type").find("option").remove()
+        $(".form-s_name").css({
+          "display":"block"
+        })
+         for(var i=0;i<foodcate.length;i++){
+         var type_name= (foodcate[i].name)
+          var type_id = (foodcate[i].id)
+          var option = $("<option></option>")
+          option.attr("value",type_id)
+          option.html(type_name)
+          option.appendTo($("#type"))  
+         }
+      }
+    }
+  })
+})
+
+ window.callback = function(res){
+        ticket = res.ticket
+        randstr = res.randstr
+        $("#ticket").val(ticket)
+        $("#randstr").val(randstr)
+        if(res.ret === 0){
+          $("#TencentCaptcha").css({
+            "display":"none"
+          })
+           $("#pictureBtn").css({
+            "display":"block"
+          })
+        }
+        else{
+          alert("网络不佳，重新提交")
+        }
+    }
+
+    //认领
+    $("#f_g_id").change(function(){
+       if($("#f_g_id").val()==4){
+          $("#sid-type").css({
+            "display":"block"
+          })
+       }else{
+         $("#sid-type").css({
+            "display":"none"
+          })
+       }
+    })

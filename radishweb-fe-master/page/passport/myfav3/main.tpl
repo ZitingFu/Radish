@@ -1,8 +1,8 @@
 {include file="radishweb/widgets/header/header.tpl"}
 <body>
 {include file="radishweb/widgets/nav/nav.tpl"}
-<div class="wrapper p-t30">
-    <div class="content w-930 pull-right wrap-content section">
+<div class="wrapper p-t30 paddingLg">
+    <div class="content w-930 pull-right wrap-content section w-baifen80">
         <div class="titlebar m-t0">
             <label>我的关注</label>
         </div>

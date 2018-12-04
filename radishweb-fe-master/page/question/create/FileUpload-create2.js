@@ -3,6 +3,7 @@
 	function aaa1(conf){
 		$.extend(this, {
 			url: '/radishweb/upload/img',
+			// url: 'https://qb.xluob.com/radishweb/upload/ossconf',
 			fileField: 'file',
 			fileFilter: {
 				type: /image/ig,

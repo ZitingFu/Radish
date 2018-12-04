@@ -1,20 +1,24 @@
 (function (window, $, undefined) {
   $(function () {
     
-     ybb.ajaxSubmit({
-			url:  '/radishweb/passport/notice',
-			form: '#form-create',
-			selector: '.btn-primary',
-			done: function(data){
-				ybb.msgs('发布成功！', 'success');
-        setTimeout(function(){
-          location.reload();
-        }, 1000);					
-			}	
-		});
+  //    ybb.ajaxSubmit({
+		// 	url:  '/radishweb/passport/notice',
+		// 	form: '#form-create',
+		// 	type: 'post',
+		// 	selector: '.btn-primary',
+		// 	regs: {
+		// 			"content":/\S/
+		// 		},
+		// 	done: function(data){
+		// 		console.log(data)
+		// 		ybb.msgs('发布成功！', 'success');
+		//         setTimeout(function(){
+		//           location.reload();
+		//         }, 1000);					
+		// 	}	
+		// });
 
-
-	  console.log(1);
+     
 	  var maxCount = 500;  // 最高字数，这个值可以自己配置
 	  $(".txt1").on('keyup', function() {
 		  var len = getStrLength(this.value);
@@ -36,3 +40,21 @@
  
   })
 })(window, $, undefined)
+
+$(".fabu").click(function(){
+	var txt1 = $(".txt1").val()
+  	$.ajax({
+     	url:  '/radishweb/passport/notice',
+     	type: 'post',
+     	data:{
+     		content:txt1
+     	},
+     	success:function(data){
+     		ybb.msgs('发布成功！', 'success');
+		        setTimeout(function(){
+		          location.reload();
+	        }, 1000);	
+     	}
+     })
+
+})

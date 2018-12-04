@@ -2,12 +2,19 @@
     border-top-left-radius:0;
     border-top-right-radius:0;
 }
+.list-group-item:hover .badge{
+    background-color: #f3f5f9;
+}
+.list-group-item:hover{
+    background-color: #f3f5f9;
+}
 .badge{
     background: #fff;
     font-size: 15px;
     color: #333333;
     font-weight: 400;
     padding-top: 20px;
+    float: right;
 }
 .col-list ul li{
     height: 51px;

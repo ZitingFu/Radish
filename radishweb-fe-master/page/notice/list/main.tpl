@@ -64,7 +64,7 @@
                         {else}
                         <img src="/images/avatar2.png" class="pull-left imgWrap" width="60" height="60">
                         {/if}
-                        <div class="info pull-right p-w89">
+                        <div class="info pull-right p-w89" style="border-bottom:1px solid #c7c7c7;padding-bottom: 28px;">
                             <p> {$item.name}<label class="pull-right" style="color:#999">{$item.time}</label> </p>
                             <p class="">&nbsp;</p>
                             {if $item.images}
@@ -90,6 +90,7 @@
             {/if}
         </div>
     </div>
+     {include file="radishweb/widgets/nav/usernav-left.tpl"}
     <!--{include file="radishweb/widgets/nav/nav-primary.tpl"}-->
 </div>
 <input type="hidden" value="{$site_id.name}" id="site_id">
@@ -109,7 +110,4 @@
 {include file="radishweb/widgets/footer/footer.tpl"}
 noticsBetter.css
 <link rel="stylesheet" type="text/css" href="/css/noticsBetter.css" />-->
-
-
-        
-        {include file="radishweb/widgets/footer/footer.tpl"}
+{include file="radishweb/widgets/footer/footer.tpl"}

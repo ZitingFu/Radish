@@ -22,3 +22,29 @@ a.listActive{
 div.show_img{
     height:auto;
 }
+.bt{
+    border: 1px solid #fda249;
+    background-color: #fff;
+    min-width: 84px;
+    margin: 28px 0 31px;
+    color: #fda249;
+}
+.dian{
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 13px;
+    position: relative;
+    top: -13px;
+}
+.dian p{
+    height: 32px;
+    line-height: 32px;
+
+}
+.dian span{
+    background-color:#fda249;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%; 
+}

@@ -11,9 +11,7 @@
       <a  href="{if $page.pn==$item} javascript:void(0) {else}{$page.uri}&rn={$page.rn}&pn={$item} {/if}"><span>{$item}</span></a>
     </li>
     {/foreach} {if $page.has_next != 0}
-    
     <li class="paginate_button next-button">
-      
       <a href="{$page.uri}&rn={$page.rn}&pn={$page.pn+1}"><span class="next_button">下一页</span></a>
     </li>
     {/if}

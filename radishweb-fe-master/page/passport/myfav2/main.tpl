@@ -44,7 +44,9 @@
             {/if}
         </div>
     </div>
-    {include file="radishweb/widgets/nav/usernav-left.tpl"}
+    <div id="left">
+        {include file="radishweb/widgets/nav/usernav-left.tpl"}
+    </div>
 </div>
 {include file="radishweb/widgets/page/page.tpl"}
 <link rel="stylesheet" href="myfav2.css">

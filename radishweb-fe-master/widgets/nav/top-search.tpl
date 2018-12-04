@@ -1,16 +1,14 @@
 
 <nav class="navbar navbar-expand-lg navbar-light signbar">
 		<div class="container">
-			<a  class="navbar-brand text-warning" id="logoTxt" href="http://xluob.com/radishweb/index/index"><img src="http://img.qa.xluob.com/life-better.jpg"></a>
-
-        
-        <li class="indexSearch">
-            <form class="pull-right" action="/radishweb/index/index" method="get" id="Search">
+			<a  class="navbar-brand text-warning" id="logoTxt" href="//xluob.com/radishweb/index/index"></a>
+        <!-- <li class="indexSearch">
+            <form class="pull-right" action="/radishweb/index/index" method="get" id="SearchBox">
                 <input type="text" name="content" value="" placeholder="搜索">
-                <img  src="/images/icon_serch.png" alt="" class="iconSerch">
+                 <img  src="/images/icon_serch.png" alt="" class="iconSerch">
                 <input type="hidden" value="search" name="type">
             </form>
-        </li>
+        </li> -->
         {include file="radishweb/widgets/nav/nav-header.tpl"}
       <!--
       {if $type == 131}

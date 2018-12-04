@@ -1,3 +1,4 @@
+<!-- 机构 -->
 {include file="radishweb/widgets/header/header.tpl"}
 <body>
 {include file="radishweb/widgets/nav/nav.tpl"}
@@ -31,9 +32,9 @@
                 {if $session.id !== $info.user_id}
                <!-- <button type="button" class="btn btn-outline btn-warning  w-100 h-28 p-play" >打赏</button>-->
                 {if $fav==99}
-                <button type="button" class="btn btn-outline btn-warning  w-100 h-28 collection">收藏</button>
+                <button type="button" class="btn btn-warning  h-28 collection" style="width:89px;height:38px;">收藏</button>
                 {else}
-                <button type="button" class="btn  btn-warning  w-100 h-28 collection">已收藏</button>
+                <button type="button" class="btn btn-warning  h-28 collection" style="width:89px;height:38px;">已收藏</button>
                 {/if}
                 {/if}
                 <!--<P class="m-b20"><label>联系人：</label>{$info.name} <label class="m-l20">联系电话：</label>{$info.phone}</P>-->
@@ -62,7 +63,7 @@
                             {if $item.avatar}
                             <img src="{$item.avatar.b}" class="pull-left" width="40" height="40">
                             {else}
-                            <img src="/images/avatar2.jpg" class="pull-left" width="40" height="40">
+                            <img src="1.png" class="pull-left" width="40" height="40">
                             {/if}
                             <div class="pull-right info p-w92">
                                 <p> <label class="name m-r20">{$item.user_name}</label> <label class="grey">{$item.create_time}</label> </p>
@@ -77,8 +78,8 @@
             {/if}
 
             <div class="desc pull-right p-w90">
-                <div class="titlebar">
-                    评论 {if $session.id !== $info.user_id}<a type="button" class="pull-right rep" data-toggle="modal" data-target="#preModal" data-id="{$info.id}" >举报该信息</a>{/if}
+                <div class="titlebar" style="width: 59%;">
+                    评论 {if $session.id !== $info.user_id}<a class="pull-right rep" data-toggle="modal" data-target="#preModal" data-id="{$info.id}" >举报该信息</a>{/if}
                 </div>
                 {if $info.comments}
                 <div class="list">
@@ -88,7 +89,7 @@
                             {if $item.avatar}
                             <img src="{$item.avatar.b}" class="pull-left" width="40" height="40">
                             {else}
-                            <img src="/images/avatar.jpg" class="pull-left" width="40" height="40">
+                            <img src="1.png" class="pull-left" width="40" height="40">
                             {/if}
                             <div class="pull-right info p-w92">
                                 <p class="name-bar">
@@ -96,9 +97,9 @@
                                     <label class="grey m-r20 m-t2">{$item.create_time} </label>
                                     {if $session.id}
                                     {if $item.is_like == 0}
-                                    <a type="button" class="pra m-r10 is_pra" data-id="{$item.id}">
+                                    <a  class="pra m-r10 is_pra" data-id="{$item.id}">
                                         {else}
-                                        <a type="button" class="pra m-r10 un_pra" data-id="{$item.id}">
+                                        <a  class="pra m-r10 un_pra" data-id="{$item.id}">
                                             {/if}
                                             {else}
                                             <a href="/radishweb/passport/login" class="m-r10" >
@@ -109,7 +110,7 @@
                                             </a>
                                             {if $session.id}
                                             {if $session.id !== $item.user_id}
-                                            <a type="button" class="com" data-id="{$info.id}" data-toid="{$item.id}" data-type="2" data-name="{$item.user_name}">
+                                            <a class="com" data-id="{$info.id}" data-toid="{$item.id}" data-type="2" data-name="{$item.user_name}">
                                                 {/if}
                                                 {else}
                                                 <a href="/radishweb/passport/login">
@@ -139,11 +140,11 @@
                     <input type="hidden" name="to_id" class="toid" value="0">
                     <input type="hidden" name="type" class="classtype" value="0">
                     <p class="coms collapse m-b15">回复：<label></label></p>
-                    <div class="form-group form-content">
+                    <div class="form-group form-content" style="width:60%">
                         <textarea  class="form-control com-content txt1" rows="12" name="content" maxlength="300" placeholder="输入在这里开始"></textarea>
                         <span class="txtbar1">(0/300)</span>
                     </div>
-                    <button type="button" id="subCon"  class="btn btn-warning m-t15 btn-primary w-217">提交</button>
+                    <button type="button" id="subCon"  class="btn btn-warning m-t15 btn-primary w-217" style="width: 212px;height:40px;">提交</button>
                 </form>
             </div>
             {/if}
@@ -256,6 +257,7 @@
         </div>
     </div>
 </div>
+<!-- {include file="radishweb/widgets/footer/footer.tpl"} -->
 
 <input type="hidden" id="session"  value="{$session.id}">
 <!--select2-->
@@ -267,5 +269,3 @@
 <script type="text/javascript" src="/util/FormValid.js"></script>
 
 <script src="info.js"></script>
-
-{include file="radishweb/widgets/footer/footer.tpl"}

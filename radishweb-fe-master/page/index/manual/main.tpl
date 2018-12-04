@@ -41,14 +41,15 @@
 					<a href="/radishweb/index/about">关于我们</a>
 					<a href="/radishweb/index/manual"  class="listActive">使用说明</a>
 					<a href="/radishweb/advertise/create">帮助与反馈</a>
+					<a href="/radishweb/index/download">物料下载</a>
 				</div>
 			</div>
 			<!--<div class="titlebar m-b30">-->
 				<!--<div class="listHead"><a href="/radishweb/notice/create" class="listActive">关于我们</a><a href="/radishweb/notice/create">使用说明</a></div>-->
 			<!--</div>-->
-			<div class="about container" style="height:4100px">
+			<div class="about container">
 				
-				<!--<img src="http://img.qa.xluob.com/radish/images/618b89d6984c83a988655cb3f9145832.png">-->
+			<!-- 	<img src="http://img.qa.xluob.com/radish/images/618b89d6984c83a988655cb3f9145832.png"> -->
 				
 				{$content}<!--<p class="m-b10">小萝卜公益网</p>-->
 				<!--<p class="m-b10">小萝卜公益网由陕西省榆林小萝卜社会公益服务中心建设，协会成立于2015年6月，主管单位为榆林市民政局，也得到共青团中央、陕西省公安厅大力支持的社会公益组织。</p>-->
@@ -59,5 +60,5 @@
         		<!--<p class="m-t30">小萝卜公益志愿者群欢迎您的加入！QQ群：278594073</p>-->
 			</div>
 		</div>
-	</div>
 	{include file="radishweb/widgets/footer/footer.tpl"}
+	</div>

@@ -60,7 +60,7 @@
               </div>
             </li>
             <li class="form-group lastBtn">
-              <button type="button" class="btn btn-warning btn-primary p-w70 pull-right">提交申请</button>
+              <button type="button" style="width:auto;padding:8px;border-radius:8%;border:navajowhite" class="btn-warning btn-primary p-w70 pull-right">提交申请</button>
               <label class="p-w25"></label>
             </li>
           </ul>

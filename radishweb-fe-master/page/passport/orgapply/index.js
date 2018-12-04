@@ -78,8 +78,9 @@
           parent = $(this).val();
       var siteC= $(this).find("option:selected").text();
       if(parent == 0){
-        //$('.form-unit_two').addClass('collapse');
-        return false;
+         // $('#site_two').val("789")
+        // //$('.form-unit_two').addClass('collapse');
+        // return false;
       }
       if( parent =='268479979'){
         $('.form-unit2').addClass('collapse');
@@ -106,14 +107,15 @@
         console.log($('#city').val(),siteC);
         placeSearch.search(siteC, function(status, result) {
           if(status === 'complete' && result.info === 'OK'){
-            console.log(result);
+            // console.log(result);
             var outcome=result.poiList.pois;
-            var outSting='<option value="0">请选择单位名称</option>';
+            var outSting='<option value="0">自定义</option>';
             for(var i=0;i<outcome.length;i++){
               outSting+='<option value='+outcome[i].name+' data-lat='+outcome[i].location.lat+' data-lng='+outcome[i].location.lng+'>'+outcome[i].name+'</option>';
             }
             $('#site_two').empty().prepend(outSting).select2();
           }
+
           //TODO:开发者使用result自己创建交互面板和地图展示
         });
       });
@@ -164,3 +166,4 @@
 
   })
 })(window, $, undefined)
+

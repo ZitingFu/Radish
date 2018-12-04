@@ -82,3 +82,12 @@
    
   })
 })(window, $, undefined)
+
+$(".dian").click(function(){
+	$(this).css({
+		"display": "none"
+	})
+	$(this).closest(".pull-right").find(".3dian").css({
+		"opacity": 1
+	})
+})

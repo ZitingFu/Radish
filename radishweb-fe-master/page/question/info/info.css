@@ -85,7 +85,6 @@
 }
 .gold{
     font-size: 14px;
-    margin-left: 72px;
     width: 250px;
     height: 28px;
     padding-left: 9px;
@@ -160,4 +159,58 @@
 .btn-warning:hover{
     background-color:#b96a1abb;
     color:#fff;
+}
+
+.ma_r76{
+    margin-right: 76px
+}
+.ma_r19{
+    margin-right:19px
+}
+.Reverse_btn{
+    color:#fff;width:65px;height:32px;background-color:#0a1825;border-radius: 6px;
+}
+.Reverse_Smallbtn{
+    color:#fff;width:30px;height:32px;background-color:#0a1825;border-radius: 6px;
+}
+.Reverse_span{
+    position: relative;bottom: -11px; margin-left: 7px;
+}
+.indexnone{
+    display: none;
+}
+.xian{
+    background-color:#a0a0a0;width:60px;height:1px;
+}
+.Claim tr{
+    color: #333333;
+}
+.Claim input::-webkit-input-placeholder{
+    color:#999999;
+}
+#infoid{
+    display: none;
+}
+.Claim input{
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    padding-left: 7px;
+    border: 0px;outline:none;
+}
+@media (max-width:480px){
+    /*body #pimg{margin-top: 73px;}*/
+    .y-center{
+        display: block;
+        margin-bottom:15px; 
+    }
+    /*.yy-conter{
+        margin-top:62px; 
+    }*/
+    .y-dianhua{
+       margin-left:0 
+    }
+    .user_name{width: 80%;}
+    .grey {display: none;}
+    .tong{display: none;}
+    .ma_r19{margin-right:0;float: left;overflow: hidden; }
 }

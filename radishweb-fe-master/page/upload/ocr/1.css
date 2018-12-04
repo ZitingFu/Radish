@@ -1,0 +1,34 @@
+.box .div1{
+	width:300px;
+	height: 200px;
+	border:1px solid #cecece; 
+	float: left;
+	text-align: center;
+}
+.box {
+	width: 700px;
+	overflow: hidden;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+li{
+	list-style: none;
+}
+table{
+	width:300px;
+	height: 200px;
+	border:1px solid #cecece; 
+}
+table th{
+	width: 32%;
+	text-align: right;
+}
+table td{
+	width: 50%;
+	text-align: left;
+}
+form{
+	padding: 15px;
+}

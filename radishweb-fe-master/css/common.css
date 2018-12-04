@@ -3,8 +3,11 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
- 
 
+*{margin: 0; padding:0;}
+a:hover{
+    color: #fc9937;
+}
 a {
   cursor: pointer;
   text-decoration: none;
@@ -165,6 +168,8 @@ body {
   visibility: inherit;
 }
 .login-info .logined i{
+  width: 15px;
+  height:15px;
   color: #999999;
 }
 .login-info .logined img{
@@ -415,6 +420,7 @@ p .collection img{
   overflow: hidden;
 }
 .col-list ul{
+  margin-top: 0;
   height: auto;
   overflow: hidden;
 }
@@ -433,9 +439,7 @@ p .collection img{
 .col-list ul li label{
   font-weight: normal;
 }
-.col-list ul li .info{
-  border-bottom: #f1f1f1 solid 1px;
-}
+
 .col-list ul li .info p.content{
   line-height: 26px;
 }
@@ -447,14 +451,28 @@ p .collection img{
   font-weight: normal;
 }
 .col-list ul li a.btn-a{
-  color: #a0a0a0;
-  font-size: 12px;
-  margin: 0px 15px 0px 0px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
+    border: 1px solid #fda249;
+    background-color: #fff;
+    width: 10%;
+    height: 32px;
+    margin: 28px 0 31px;
+    color: #fda249; 
+    border-radius: 5px; 
+    display: inline-block;
+    margin-bottom:0; 
+
+}
+.col-list ul li a.btn-a:hover{
+  background-color: #fda249;
+  color: #fff;
 }
 .col-list ul li:last-child{
   margin-bottom: 0;
 }
-/*details*/
+/*details
 .details{
   height: auto;
   overflow: hidden;
@@ -805,7 +823,9 @@ p .collection img{
   margin: 0 8px;
 }
 video{
-  width: 360px;
+  object-fit:fill;
+  width: 245px;
+  height: 247px;
 }
 .btn-warning.btn-outline{
   color:#fff;
@@ -824,4 +844,510 @@ video{
   background-color:#fc9937;
   color:#fff;
   border-color:#fc9937;
+}
+
+/*修改个人中心普通用户*/
+.login-info .pull-right{
+  position: relative;
+}
+
+body nav.signbar div.container {
+  position: relative;
+  width: 100%;
+}
+.loginUserName i{
+  width: 15px;
+}
+.carousel-indicators li:hover {
+    border: 1px solid #eed2d7;
+}
+.carousel-indicators li{
+      width: 16px;
+      height: 16px;
+      margin-left: 14px;
+      margin-bottom: 15px;
+}
+@media only screen and (min-width: 1200px){
+  body .navbar-light .navbar-nav .nav-link{
+    padding:0;
+    margin-left:45px; 
+  }
+ body div.container {
+      width:auto;
+      margin: 0 auto;
+  }
+  body nav.signbar div.over-visible {
+     margin-right: 0px; 
+  }
+  body .wrapper header .over-visible{
+    padding:0;  
+  }
+  
+}
+@media (min-width: 768px){
+ body nav.signbar div.login-info{
+     width: auto; 
+     position: relative;  
+  }
+}
+@media (min-width: 320px){
+
+  div.user-details ul li a div p{
+    padding-left: 0;
+  }
+  body nav.signbar .loginUserName {
+     width: auto; 
+  }
+  #loginUserName{
+    width: 100px;
+    overflow: hidden;
+  }
+  #classify-tag ul li a {
+    padding-left: 21px;
+  }
+}
+@media (min-width:768px){
+
+  body nav.signbar .loginUserName  {
+     width: auto; 
+  }
+  
+}
+.loginUserName{
+  width: auto;
+}
+#search{
+    position: absolute;
+    right: 190px;
+    top: 5px;
+}
+#SearchBox{
+    display:none;
+}
+html body .w-baifen80{
+ /* width:73%;*/
+
+}
+html body .paddingLg{
+  padding-left: 8px;
+  padding-right:8px;
+}
+/*手机端*/
+
+@media (max-width: 640px){
+  .col-list ul li a.btn-a{
+    width: 14%;
+  }
+  html body .w-baifen80{
+  width:100%;
+
+}
+.reg{
+  padding-bottom: 45px;
+}
+body .leftpop{
+  left: 0;
+  top:0;
+  width: 50%;
+  position: fixed;
+  z-index: 999;
+}
+html body .paddingLg{
+  padding-left: 8px;
+  padding-right:8px;
+}
+ html body .loginDiv #Sign{
+    width: 100%;
+  }
+
+  body .reg ul li{
+    width:100%;
+  }
+  /*body div.content-border{
+    width: auto;
+  }*/
+  body #cdd{
+    width:14%;
+    border-radius:50%
+  }
+  body .details .info{
+    width: 80%;
+  }
+  body #pimg {
+    overflow: hidden;
+  }
+  body #pimg img{
+    width: 49%;
+    height: 14%;
+    float: left;
+    margin: 0;
+    margin-bottom:6px; 
+  }
+  body #pimg img:nth-child(even){
+    float: right;
+  }
+  body .clearFix .pull-left {
+    /*width: 100%;*/
+  }
+  body .info .content{
+    width: 90%;
+  }
+  body .txtbar1{
+    bottom: -21px; 
+    right: 22px;
+  }
+  body .wrapper .content .details img{
+    width: 15%;
+  }
+  body .txtbar2 {
+    right: 32px;
+    bottom: -19px;
+  }
+  body ul#pills-tab li{
+    margin-right:0; 
+  }
+  body .p-w25{
+    width: auto;
+  }
+  .col-list ul li .info{
+    width: 70%;
+  }
+  .pull-left{
+    width: 58%;
+  }
+  /*html body .imgWrap{
+    width: 15%;
+  }*/
+  .pull-left{
+    width: 20%;
+   /* height: 15%;
+    border-radius: 50%;*/
+  }
+  body .m-b25  .pull-left{
+    border-radius: 50%;
+  }
+  body #areaTxt{
+      height: 264px;
+    font-size: 20px;
+    padding-top: 15px;
+  }
+  body .content{
+    width: 100%;
+  }
+  body .clearFix label:nth-child(even){
+    /*display: none;*/
+  }
+  .titleContent{
+    margin-bottom:12px; 
+    margin-left:12px;
+  }
+  .reg ul {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .col-list {
+    height: auto;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+  }
+  body .w-846{
+    width: auto;
+  }
+  .indexSearch img {
+    top: 21px!important;
+  } 
+/*  body .container{
+    width: 90%!important; 
+  }*/
+  .login-info .logined img{
+     display: none;
+  }
+  .login-info .logined i{
+     display: none;
+  }
+  body .login-info .logined .iconSerch{
+    display: block;
+  }
+  .indexSearch form input[name=content] {
+    position: relative;
+    top:9px;
+    left:45px;
+    width: 148px;
+  }
+  .indexSearch .iconSerch{
+    position: absolute;
+    top: 21px;
+    right: -37px;
+    bottom: 12px;
+  }
+ /* .container{
+    padding:5% 5%;
+  }*/
+  nav.signbar div.login-info {
+    width: 181px;
+    padding: 20px;
+  }
+  nav.signbar div.login-info {
+    width: 100%;
+  }
+/* body #search {
+    top: 21px;
+  }*/
+  body  #forup, .form-group .form-content{
+    width: 90%;
+    margin: 0 auto;
+    margin-left:12px;
+    margin-right:0;
+    margin-bottom: 12px;
+
+  }
+  body #q_remark{
+    width: 90%;
+    margin-bottom: 25px;
+  }
+  body #SearchBox{
+   display: block;
+  }
+  .carousel-indicators li{
+      width: 10px;
+      height: 10px;
+      margin-left: 4px;
+      margin-bottom:0px;
+  }
+  .w-830 {
+     width:auto; 
+  }
+  body #form-create div.form-content {
+      width: 90%;
+      margin: 0 auto;
+      margin: 0;
+  } 
+ body .details p.content{
+    width: 90;
+ }
+  body .listHead{
+    padding: 0 5%;
+ }
+ /*body .sidebar{
+    width: 100%;
+  }*/
+ body .Cover .m-Cover{
+   width: auto;
+ }
+ .m-list .gold{
+    margin-left: 0px; 
+    width: auto; 
+    height: 28px;
+    padding-left:0px;
+    padding:10px;
+ }
+ .m-list ul{
+    margin-right:0px;
+ }
+ body .details .desc .name-bar a{
+    height:15px;
+ }
+ body div.content-border{
+  width: 100%;
+}
+html body .clearFix .w-300 .container{
+  width: 100%;
+}
+  /*手机端完*/
+}
+
+@media only screen and (max-width: 576px){
+/*  body .sidebar ul{
+    display: none;
+  }*/
+  #demo div img {
+     height:auto!important; 
+  }
+  div.searchbar form ul li {
+    width: 272px;
+    padding:5px;
+  }
+}
+@media (max-width: 1199px){
+  #demo div img {
+    width: 100%;
+     height:auto!important; 
+  }
+}
+
+/*input搜索*/
+@media (min-width: 992px){
+  .indexSearch form input[name=content] {
+       width: auto; 
+  }
+}
+@media (min-width: 768px){
+  #search {
+    margin-left: -2rem;
+  }
+}
+
+@media (min-width: 992px){
+  .indexSearch form input[name=content] {
+    width: auto;
+    width: 196px;
+  }
+}
+.indexSearch {
+     position: static; 
+}
+
+/*最大768*/
+@media (min-width: 768px){
+  body nav.signbar .loginUserName {
+    width: auto;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 640px){
+  .indexSearch form input[name=content] {
+  }
+}
+@media only screen and (min-width: 1200px){
+  
+ .wrapper .block .leftpop{
+    display: block;
+  }
+
+   body #cdd{
+     width:80px;
+     height: 80px;
+     border-radius:50%
+  }
+  body .form-control{
+    margin:0;
+  }
+  .wrapper div.section {
+    margin-right: 0px!important;
+   /* width: 100%;*/
+  }
+  .loginUserName #User-name{
+    display: inline-block;
+    line-height:0.8;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width:29px;
+
+  }
+  .details .info p.images img{
+      width: 245px;
+     height: 247px;
+  }
+}
+div.show_img img{
+  width: 245px;
+  height: 247px;
+}
+/*@media (max-width:320px){
+  body{
+    background-color: red;
+  }
+}*/
+@media (max-width:360px){
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 0px;
+  }
+}
+@media (max-width:320px){
+  .navbar-expand-sm .navbar-nav .nav-link {
+      padding-left: 26px;
+  }
+}
+@media (max-width: 620px){
+  .navbar-expand-sm .navbar-nav .nav-link {
+     /*padding-left:39px; */
+  }
+  .indexSearch form input[name=content]{
+      left: 59px;
+  }
+  .indexSearch .iconSerch{
+       right: -46px;
+  }
+}
+ body .leftpop{
+  display: none;
+ }
+body .pull-right .rep{
+    outline:none;
+    border:1px solid #fff;
+    background-color: #fff;
+    color: #fc9937;
+}
+ body .details a.rep:hover{
+    color:#f6881b;
+ }
+ body .btn:not(:disabled):not(.disabled){
+    width: auto;
+    padding: 5;
+ }
+/*.btn:not(:disabled):not(.disabled){
+    height: 40px;
+    width: 217px;
+}*/
+
+@media only screen and (min-width: 1200px){
+  .guanggao1 .w-baifen80{
+      width: 80%;
+    }
+    .guanggao .leftpop{
+      display:block;
+    }
+  html body .wrapper .wrap-content{
+     width: 80%; 
+  }
+ 
+  body div.pagebar li{
+    width:auto;
+  }
+  .dianji{
+    display: none;
+  }
+  body .sidebar{
+    width:15%;
+  }
+  body .p-t30 #left .leftpop{
+        display:block;
+    }
+}
+@media (min-width: 1200px){
+   body .leftpop{
+    display: none;
+  }
+  .paddingLg .leftpop{
+    display: block;
+  }
+  /*body .leftpop{
+    display: block;
+  }*/
+  .dakai{
+    display: none;
+  }
+ body div.backgroundImg {
+    width: 636px;
+  }
+  body .wrapper div.section{
+    padding-top:0;
+/*    float: right;
+*/  }
+  body .wrapper div.section{
+   /*width: 100%*/
+  }
+}
+.CC{
+  width: 84px;
+  height: 40px;
+}
+
+@media (min-width: 200px){
+  body .wrapper {
+    width: 100%;
+  }
 }

@@ -1,8 +1,8 @@
 <!DOCTYPE html ">
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
+  <META HTTP-EQUIV="Pragma" CONTENT="cache">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content=1"">
@@ -10,18 +10,19 @@
   <meta name="baidu_union_verify" content="bf019c480ee7327e61c7fa78dd894256">
   <title>小萝卜公益</title>
   <script type="text/javascript" src="/libs/jquery/jquery.min.js"></script>
+
   <!--bootstrap
   <link rel="stylesheet" type="text/css" href="/libs/bootstrap/css/bootstrap.css" /> 
   <script type="text/javascript" src="/libs/bootstrap/js/bootstrap.min.js"></script>
 
   <!--bootstrap-notify-->
   <script type="text/javascript" src="/libs/bootstrap-notify/bootstrap-notify.js"></script>
-
+  
     <!-- Bootstrap -->
   
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/style.css?ver=1519254085">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/style.css?ver=1519254085">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="/css/common-news.css" />
   <!--font-awesome-->
   <link rel="stylesheet" type="text/css" href="/libs/font-awesome-4.1.0/css/font-awesome.min.css" />
@@ -30,12 +31,12 @@
   <link rel="stylesheet" type="text/css" href="/css/w-h.css" />
   <link rel="stylesheet" type="text/css" href="/css/m-p.css" />
   <link rel="stylesheet" type="text/css" href="/css/reset.css" />
-  
   <link rel="stylesheet" type="text/css" href="/css/common.css" />
   
-  <link rel="icon"  type="image/png" href="http://img.qa.xluob.com/radish/images/b4a51a7f3fb8f4ed57175c6e255894a1.png"/>
+  <!-- <link rel="icon"  type="image/png" href="http://img.qa.xluob.com/radish/images/b4a51a7f3fb8f4ed57175c6e255894a1.png"/>
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/> 
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>  -->
+  
   <script type="text/javascript" src="/util/common.js"></script>
   <!--<script type="text/javascript" src="/libs/index.js"></script>-->
   <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">

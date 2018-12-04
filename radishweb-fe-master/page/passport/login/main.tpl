@@ -10,7 +10,7 @@
         <img class="" src="http://img.qa.xluob.com/%E7%99%BB%E5%BD%95%E9%A1%B5_03.png">
     </div>
     
-    <div class="section login w-420 pull-right">
+    <div class="section login w-420 pull-right" id="Sign">
       <form id="loginform" class="form-vertical">
       <ul class="clearFix w-300 container">
         <li class="form-group user_name"> <input id="phone" name="phone" type="tel" class="form-control" placeholder="用户名"><!--<label class="w-38"></label>--> </li>

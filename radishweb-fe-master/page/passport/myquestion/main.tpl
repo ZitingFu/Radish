@@ -1,25 +1,25 @@
-{include file="radishweb/widgets/header/header.tpl"}
+  {include file="radishweb/widgets/header/header.tpl"}
 <body>
   {include file="radishweb/widgets/nav/nav.tpl"}
-  <div class="wrapper p-t30">
-    <div class="content w-930 pull-right wrap-content section">
+  <div class="wrapper p-t30 paddingLg">
+    <div class="content w-930 pull-right wrap-content section w-baifen80">
       <div class="titlebar m-t0 m-b20">
-        <div class="listHead"><a href="/radishweb/passport/myquestion" {if $org !=1}class="listActive"{/if}>我的信息</a>{if $session.type==2}<a href="/radishweb/passport/mynotice2">我的公告</a>{/if}</div>
+        <div class="listHead"><a href="/radishweb/passport/myquestion" {if $org !=1}class="listActive"{/if}>我的信息</a>{if $session.type==2}<a href="/radishweb/passport/mynotice2" style="border-right: 2px solid #fff;">我的公告</a>{/if}<a href="/radishweb/passport/claim">认领审核</a></div>
       </div>
       <div class="col-list m-t20">
         {if $question}
         <ul>
           {foreach from=$question key=i item=item}
-          <li class="m-b25">
+          <li class="m-b25" style="border-bottom: 1px solid #c7c7c7;">
 <!--             <a href="/radishweb/question/info?id={$item.id}">-->
               {if $session.avatar}<img src="{$session.avatar.s}" class="pull-left" width="60" height="60">{else}<img src="/images/avatar2.png" width="60" height="60" class="pull-left">{/if}
               <div class="info pull-right p-w91 p-b15" data-id="{$item.id}" data-open="{$item.open}">
                 <a href="/radishweb/question/info?id={$item.id}">
-                <p> {$session.name}<label class="pull-right" style="color:#999">{$item.time}</label> </p>
+                <p>{$session.name}{$item.subname}<label class="pull-right" style="color:#999">{$item.time}</label> </p>
                 <p class="m-t10 m-b10">{$item.genre_name}</p>
                   {if $item.status ==!11}
                   {if $item.images}
-                  <div class="show_img ">
+                  <div class="show_img">
                     {foreach from=$item.images key=i item=items}
                     <img src="{$items.b}" alt="" class="w-248 h-160 m-b10 m-r10">
                     {/foreach}
@@ -42,28 +42,39 @@
                   {/if}
                   {/if}
                 <p class="content m-b10">{$item.content|truncate:100:"..."}</p>
-                <P class="m-b10"><label>联系人：</label>{$item.name} <label class="m-l20">联系电话：</label>{$item.phone}</P>
+                <P class="m-b10"><label>联系人：</label>{$item.name} <label class="">联系电话：</label>{$item.phone}</P>
                 </a>
-                <a class="btn-a" href="/radishweb/passport/editquestion?id={$item.id}">修改信息</a>
+                  {if $session.type == '2'}
+                  <a class="btn-a" href="/radishweb/question/barcode?id={$item.id}&Release=y">打印条形码</a>
+                {/if}
                 {if $item.status !== '11'}
                 {if $item.f_g_id ==1 || $item.f_g_id ==2 }
-                <a class="btn-a btn-find" type="button" data-toggle="modal" data-target="#find-confirm" data-love="{if $item.f_g_id==1||$item.f_g_id==2}1{else if $item.f_g_id==3||$item.f_g_id==4}3{/if}">寻找中</a>
+                <a class="btn-a btn-find"  data-toggle="modal" data-target="#find-confirm" data-love="{if $item.f_g_id==1||$item.f_g_id==2}1{else if $item.f_g_id==3||$item.f_g_id==4}3{/if}">寻找中</a>
                 {/if}
                 {if $item.f_g_id ==3 || $item.f_g_id ==4 }
-                <a class="btn-a btn-find" type="button" data-toggle="modal" data-target="#find-confirm" data-love="{if $item.f_g_id==1||$item.f_g_id==2}1{else if $item.f_g_id==3||$item.f_g_id==4}3{/if}">认领中</a>
+                <a class="btn-a btn-find"  data-toggle="modal" data-target="#find-confirm" data-love="{if $item.f_g_id==1||$item.f_g_id==2}1{else if $item.f_g_id==3||$item.f_g_id==4}3{/if}">认领中</a>
                 {/if}
                 {else}
                 {if $item.f_g_id ==1 || $item.f_g_id ==2 }
-                <a class="btn-a btn-find" type="button" style="cursor: auto">已找到</a>
+                <a class="btn-a btn-find"  style="cursor: auto">已找到</a>
                 {/if}
                 {if $item.f_g_id ==3 || $item.f_g_id ==4 }
-                <a class="btn-a btn-find" type="button" style="cursor: auto">已认领</a>
+                <a class="btn-a btn-find"  style="cursor: auto">已认领</a>
                 {/if}
                 {/if}
-                <a class="btn-a btn-delete" type="button" data-toggle="modal" data-target="#delete-confirm">删除信息</a>
-                <a class="btn-a btn-delete" type="button" data-toggle="modal" data-target="#edit-confirm">{if $item.open ==0}关闭信息{else}开启消息{/if}</a>
+                <div class="dian">
+                  <p>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </p>
+                </div>
+                <span class="3dian" style="opacity: 0">
+                <a class="btn-a" href="/radishweb/passport/editquestion?id={$item.id}">修改信息</a>
+                <a class="btn-a btn-delete"  data-toggle="modal" data-target="#delete-confirm">删除信息</a>
+                <a class="btn-a btn-delete"  data-toggle="modal" data-target="#edit-confirm">{if $item.open ==0}关闭信息{else}开启消息{/if}</a>
+                </span>
               </div>
-<!--             </a>-->
           </li>
           {/foreach}
         </ul>

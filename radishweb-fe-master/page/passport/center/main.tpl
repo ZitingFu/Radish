@@ -2,7 +2,7 @@
 <body>
 {include file="radishweb/widgets/nav/nav.tpl"}
 <div class="wrapper">
-    <div class="content w-846 pull-right wrap-content section">
+    <div class="section" style="min-height:-60px;" id="Sign" style="float: none">
         <div class="m-t20 m-b20 head-bar">
             {if $info.avatar.s}
             <img src="{$info.avatar.s}" alt="" class="h-60 w-60">
@@ -32,9 +32,9 @@
                 <li class="m-b25">
                     <a href="/radishweb/question/info?id={$item.id}" data-id2="{$item.user_id}">
                         {if $info.avatar.b}
-                        <img src="{$info.avatar.b}" class="pull-left imgWrap" width="60" height="60">
+                        <img src="{$info.avatar.b}" class="pull-left imgWrap" id="cdd">
                         {else}
-                        <img src="/images/avatar2.png" class="pull-left imgWrap" width="60" height="60">
+                        <img src="/images/avatar2.png" class="pull-left imgWrap" id="cdd">
                         {/if}
                         <div class="info pull-right p-w91">
                             <p> {$item.user_name}<label class="pull-right">{$item.time}</label> </p>
@@ -57,9 +57,9 @@
                 <li class="m-b25">
                     <a href="/radishweb/question/info?id={$item.id}" data-id2="{$item.user_id}">
                         {if $info.avatar.b}
-                        <img src="{$info.avatar.b}" class="pull-left imgWrap" width="60" height="60">
+                        <img src="{$info.avatar.b}" class="pull-left imgWrap" id="cdd">
                         {else}
-                        <img src="/images/avatar2.png" class="pull-left imgWrap" width="60" height="60">
+                        <img src="/images/avatar2.png" class="pull-left imgWrap" id="cdd">
                         {/if}
                         <div class="info pull-right p-w91">
                             <p> {$item.name}<label class="pull-right">{$item.time}</label> </p>

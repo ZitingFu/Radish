@@ -36,7 +36,7 @@
       type: 'post',
       selector: '.btn-primary',
       regs: {
-        'phone': /^1[3-8]{1,}[0-9]{9}$/,
+        'phone': /^1[3-9]{1,}[0-9]{9}$/,
         'code': /\S/,
         'pass': /\S/,
       },

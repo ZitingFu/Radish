@@ -4,7 +4,11 @@
 <div class="wrapper p-t30">
     <div class="content w-830 pull-right wrap-content section">
         <div class="titlebar m-t0 m-b20">
-            <label>个人中心</label>&nbsp;&nbsp;<a href="/radishweb/passport/lovelist?type=1" class="activeLove">爱心值&nbsp;{$pass.love}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/radishweb/question/stat">发布数&nbsp;{$pass.issue_num}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/radishweb/question/foundlist">已找到&nbsp;{$pass.found_num}</a>
+            <label>个人中心</label>&nbsp;&nbsp;
+            <a href="/radishweb/passport/balance?type=1">余额账户&nbsp;</a><b class="lineI"></b>
+            <a href="/radishweb/passport/lovelist?type=1" class="activeLove">爱心值&nbsp;{$pass.love}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="/radishweb/question/stat">发布数&nbsp;{$pass.issue_num}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="/radishweb/question/foundlist">已找到&nbsp;{$pass.found_num}</a>
         </div>
         <div class="col-list m-t20">
             <div class="love">
@@ -30,10 +34,13 @@
             </ul>
         </div>
     </div>
-    {include file="radishweb/widgets/nav/usernav-left.tpl"}
+    <div id="left">
+         {include file="radishweb/widgets/nav/usernav-left.tpl"}
+    </div>
 </div>
-{if $page.nc >= 1}
-<div class="pagebar">
+{include file="radishweb/widgets/page/page.tpl"}
+<!-- {if $page.nc >= 1} -->
+<!-- <div class="pagebar">
     <ul class="pagination">
         {if $page.has_prev != 0}
         <li class="paginate_button previous">
@@ -49,6 +56,14 @@
         </li>
         {/if}
     </ul>
-</div>
+</div> -->  
+<style>
+  @media (min-width: 1200px){
+    body .leftpop{
+        display: block;
+    }
+    
+ }
+</style>
 {/if} <link rel="stylesheet" href="lovelist.css">
 {include file="radishweb/widgets/footer/footer.tpl"}

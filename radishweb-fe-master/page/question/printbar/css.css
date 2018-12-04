@@ -1,0 +1,533 @@
+*{
+margin: 0;padding: 0;
+}
+.state{
+display: none;
+}
+.cd{
+background-color: red;
+}
+.cancel:hover{
+background-color: #b8b6b6
+}
+.Surveydiv{
+margin:57px 0 44px 67px;
+}
+a{
+text-decoration: none;
+color: #fff;
+}
+strong{
+display: none;
+}
+.gongsi{
+width:117px;
+}
+.statusloading{
+display: none;
+position: absolute;
+left: 50%;
+margin-top:50%;
+margin-left:31px;
+margin-top:37px;  
+}
+.PopupRecharge .white{
+color: #fff;
+}
+.compongName{
+width:242px;
+height:41px;
+border-radius:6px;
+outline:none;
+border: 1px solid #dddddd;
+}
+.compongBrief,.compongName{
+display: none;
+}
+.compongBrief{
+padding:5px 5px;
+border: 1px solid #dddddd;
+width:279px;
+height:60px;
+}
+.block{
+display: block;
+}
+i{
+font-style: normal
+}
+.Popup ul li:hover .bigsize{
+color: #fff;
+}
+.Popup ul li:hover .size{
+color: #fff;
+}
+.bigsize{
+color: #fc9937;
+font-size: 20px;
+}
+.size{
+color: #fda249;
+font-size: 12px;
+}
+.Submission{
+background-color:#fda249;
+margin-right:32px;
+width:120px;
+line-height:30px;
+text-align: center;
+cursor: pointer;
+border: none;
+color: #fff;
+border-radius: 3px;
+line-height: 34px;
+}
+.PopupRecharge li{
+cursor: pointer
+}
+.wrapper{
+width:1152px;
+margin: 0 auto;
+}
+.PopupInvoice{
+position: relative;
+}
+.PopupInvoice .InvoiceIco{
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -122.5px;
+	margin-top: -92.5px;
+}
+li{
+	list-style:none;
+}
+.Survey-left{
+	width: 15%;
+	float: left;
+}
+.promptBox{
+	color: red;
+}
+.Survey-head{
+	width: 80%;
+	float: right;
+}
+
+.Survey-head h2{
+	font-size: 16px;
+	padding-top: 0;
+	border-bottom:1px solid #999;
+	margin-bottom:22px; 
+	margin-top:0; 
+}
+.Survey-head h2 span{
+font-weight: normal;
+text-align: center;
+width: 70px;
+text-align: center;
+display: inline-block;
+font-size: 14px;
+color: #000;
+}
+.Survey-head .ul li{
+color: #c6c6c6;
+float: left;
+width: 99px;
+height: 22px;
+line-height: 22px;
+text-align: center;
+}
+.Survey-head .ul li:hover{
+color:#000;
+cursor: pointer 
+}
+.Survey-head .ul li:nth-child(odd){
+border-bottom:1px solid #e6e6e6;
+}
+.Survey-head .ul li:nth-child(even){
+border:1px solid #e6e6e6;
+}
+.Survey-head .ul li:first-child{
+width: 22px;
+}
+.Survey-head .ul li:last-child{
+width: 22px;
+}
+.p{
+text-align: center;
+margin-top:42px;
+}
+.height{
+	height: 117px;
+}
+.Survey-head th:first-child{
+width:0px;
+}
+.Popup{
+display: none;
+width: 377px;
+height: auto;
+}
+.Popup ul li{
+margin-left: 2%;
+margin-bottom: 2%;
+text-align: center;
+width:30%;
+height:auto;
+line-height: 26px;
+border:1px solid #fda249;
+float: left;
+border-radius: 4px;
+}
+.Popup ul li:hover{
+background-color: #fda249;
+}
+.Popup ul{
+width: auto;
+margin-top:21px;
+overflow: hidden;
+}
+.Popup h3{
+text-align: center;
+}
+.Popup .money span{
+padding:0 41px 0 13px;
+border-bottom:1px solid #000;
+}
+.Popup .money{
+margin-top:28px; 
+}
+.Popup .payment{
+margin-top:26px; 
+}
+.Popup .payment a{
+width: 165px;
+height: 39px;	
+}
+
+body .Survey-head .ul .change{
+color:#000;
+border-bottom: none;
+}
+body .Survey-head .change:hover{
+color:#000;	
+}
+textarea{
+width: 281px;
+height: 59px;
+}
+.marginR48{
+margin-right:48px; 
+}
+.PopupInvoice input:focus{
+border: 1px solid #cecece;			
+}
+.PopupInvoice{
+display: none;
+font-size: 15px;
+color: #878787;
+height: 557px;
+clear: both;
+width: 508px;
+}
+.orange{
+color: #fff;
+background-color:#fc9937;
+}
+body .orange2{
+color: #fff;
+background-color:#fc9937;
+}
+.PopupInvoice table{
+margin-left: 30px;
+border-collapse: separate;
+border-spacing: 0px 24px;  
+}
+.PopupInvoice h4{
+padding-left:18px; 
+color: #a9a9a9;
+line-height: 43px;
+border-bottom:1px solid #dddddd;
+}
+.PopupInvoice table input{
+padding-left: 5px;
+width: 280px;
+height: 27px;
+}
+.ModifyAdvertisement,.ModifyName{
+/*margin-left:49px;*/
+cursor:pointer;
+color: #2e8ffc;
+}
+
+.PopupInvoice table th{
+text-align: right;
+font-weight: normal;
+
+}
+body .Extension .table>tbody>tr>td{
+border-top:none;
+
+}
+.paddingLeft{
+padding-left:5px;
+}
+.clear{
+clear: both;
+}
+.banxin{
+width: 1152px;
+margin: 0 auto;
+}
+.logoIMG{
+border:1px solid #dddddd;
+width: 50px;
+height: 50px;
+position:relative; 
+}
+.logoIMG img{
+position: absolute;
+width:100%;
+height:100%;
+top:0%;
+left:0%;
+}
+.Extension table{
+padding-left: 23px;
+border-collapse: separate;
+border-spacing: 0px 24px;  
+}
+html #logowidth{
+width: 50px;
+position: relative;
+line-height: 50px;
+opacity: 0;
+}
+.AmountMoney{
+width: 87px;
+padding-left: 13px;
+border-radius: none;
+border:1px solid #dedede;
+border-top: none; 
+border-left: none; 
+border-right: none; 
+}
+.Popup{
+position: relative;
+}
+.ico{
+display: block;
+position: absolute;
+left: 50%;
+top: 50%;
+margin-left:-40px;
+margin-top:-63px;
+}
+.paging span{
+margin-top:45px; 
+border: 1px solid #cecece;
+min-width: 25px;
+display: inline-block;
+cursor: pointer;
+}
+.paging span:hover{
+background-color: #fda249;
+}
+.Survey .table thead th{
+text-align: center;
+}
+.Survey .table>tbody>tr>td{
+text-align: center;
+}
+/*...........................................*/
+.fd{
+	color: #fda249;
+	border: 1px solid #fda249;
+	display: inline-block;
+}
+.center{
+	text-align: center;
+}
+.margin25{
+	margin-bottom:25px; 
+}
+.Survey_box .btn{
+	border:1px solid #999;
+	background-color: #fff;
+	min-width: 84px;
+	margin:28px 0 31px 0; 
+	color: #999;
+	background-color: #e7e7e7;
+}
+h6{
+	margin-bottom:14px; 
+}
+.Y{
+	width: 2px;
+	height:19px;
+	background-color: #333;
+	display: inline-block;
+	position: relative;
+	bottom: -3px;
+}
+.Y2{
+	width: 1px;
+	height:15px;
+	background-color: #333;
+	display: inline-block;
+	position: relative;
+	bottom: -3px;
+}
+a{
+	color: #333;
+	font-size: 14px;
+}
+html .orange1{
+	color:#fda249; 	
+}
+.aorange:hover{
+	color:#fda249; 	
+
+}
+.ared:hover{
+	color:red; 	
+}
+.ared{
+	color:#6ba6f6;
+}
+.edit{
+	color: #6ba6f6; 	
+}
+.edit:hover{
+	color:red; 	
+}
+.none{
+	display: none;
+}
+.Template{
+	display: none;
+}
+.none{
+	display: none;
+}
+/*-------------------------------*/
+.active_span{
+	color:#fda249;
+}
+.Survey_left{
+	width: 10%;
+	float:left; 
+}
+.Survey_left>div{
+	margin-left:16px; 
+	width: 50px;
+	height: 50px;
+}
+.Survey_left img{
+	width: 100%;
+	height: 100%;
+}
+.Survey_right{
+	width: 90%;
+	line-height: 30px;
+	float: right;
+ 	border-bottom: 1px solid #999;
+}
+.Survey_box{
+	font-size: 16px;
+	margin-bottom:37px; 
+
+}
+.add{
+	margin-right:34px; 
+}
+/***********************/
+
+.barcode-btn{
+	text-align: center;
+	width: 178px;
+	height: 43px;
+	line-height: 42px;
+	font-size: 15px;
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #fff;
+	border: 1px solid #999;
+}
+.barcode-btn:hover{
+	background-color: #fda249;
+	color: #fff;
+}
+.urlimg{
+	width: 100%;
+	height: 100%;
+}
+.width80{
+	width: 55%;
+	 line-height:57px;
+	 margin-left: 5%;
+}
+.width20{
+	width: 40%;
+    line-height: 45px;
+    font-weight: 700;
+}
+.row{
+	/*margin: 0 0%;*/
+	font-size: 16px;
+	border-top: 1px solid #999;
+	/*border-left: 1px solid #999;
+	border-right:1px solid #999;*/
+}
+.row1{
+	font-size: 20px;
+	font-weight:700;
+	/*height: 46px;*/
+}
+.row3{
+	/*border-bottom:1px solid #999;*/
+	font-weight: 700;
+	font-size: 16px;
+}
+.row2{
+	font-size: 16px;
+	line-height: 37px;
+}
+.Survey{
+	margin-top:15px; 
+	width:709px;
+	height: 472px;
+}
+.Print:hover{
+	color: #fff;
+}
+a:not([href]):not([tabindex]):hover{
+	color: #fff;
+}
+@media (max-width: 620px){
+	.Survey-head{
+		width: 100%;
+	}
+	.Survey-head .ul li:nth-child(odd){
+		border-bottom: 1px solid #fff;
+	}
+	.Survey-head .ul li{
+		margin-right:5px;
+		float: left;
+		width: 30%;
+		height:40px;
+		line-height: 40px;
+	}
+	.Survey-head h2{
+		margin-bottom:15px;
+	}
+	.Survey_right{
+		width: 80%;
+	}
+	.Survey{
+		width: 100%;
+	}
+	
+}

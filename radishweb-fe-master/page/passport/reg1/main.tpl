@@ -17,9 +17,11 @@
           <label for="phone" class="p-w25">手机号</label> 
           <input id="phone" name="phone" type="tel" class="form-control p-w70 pull-right" placeholder="请输入手机号码"> 
         </li>
-        <li class="form-group form-code" style="display:block;hegiht:31px;">
+        <li class="form-group form-code" style="display:block;hegiht:31px;display:none" id="yanzheng">
           <label for="code" class="p-w25 pull-left">验证码</label>
-          <button type="button" class="btn btn-outline btn-warning code pull-right w-95 identifyCode" style="color:#fff;background-color:#fda249">获取验证码</button>
+       
+          <button type="button" class="btn btn-outline btn-warning code pull-right w-95 identifyCode" id="TencentCaptcha" data-appid="{$captcha}" data-cbfn="callback" style="color:#fff;background-color:#fda249">获取验证码</button>
+
           <input id="code" name="code" type="text" class="form-control p-w35 pull-right" placeholder="请输入验证码">
            
         </li>
@@ -51,7 +53,8 @@
   </script>
   <link rel="stylesheet" type="text/css" href="index.css" />
   <link rel="stylesheet" type="text/css" href="checkbox.less" />
-  <script type="text/javascript" src="/util/FormValid.js"></script>
+  <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+   <script type="text/javascript" src="/util/FormValid.js"></script>
   <script src="index.js"></script>
   
 

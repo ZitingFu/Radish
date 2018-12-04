@@ -13,7 +13,6 @@
     typeof define === 'function' && define.amd ? define(factory) :
     (global.Viewer = factory());
   }(this, (function () { 'use strict';
-  
     var DEFAULTS = {
       // Enable inline mode
       inline: false,
@@ -157,7 +156,6 @@
     var EVENT_RESIZE = 'resize';
     var EVENT_TRANSITION_END = 'transitionend';
     var EVENT_WHEEL = 'wheel mousewheel DOMMouseScroll';
-  
     var BUTTONS = ['zoom-in', 'zoom-out', 'one-to-one', 'reset', 'prev', 'play', 'next', 'rotate-left', 'rotate-right', 'flip-horizontal', 'flip-vertical'];
   
     var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
@@ -2648,7 +2646,7 @@
         classCallCheck(this, Viewer);
   
         if (!element || element.nodeType !== 1) {
-          throw new Error('The first argument is required and must be an element.');
+          // throw new Error('The first argument is required and must be an element.');
         }
   
         this.element = element;

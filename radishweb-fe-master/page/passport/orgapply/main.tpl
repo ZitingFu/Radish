@@ -4,7 +4,7 @@
   {include file="radishweb/widgets/nav/nav.tpl"}
   <div class="wrapper container">
     <img class="registerImg pull-left" src="http://img.qa.xluob.com/%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2_03.png">
-    <div class="section reg m-height pull-right">
+    <div class="section reg m-height">
       <h3>欢迎来到小萝卜注册中心</h3>
       <div class="content-border">
       <div class="titlebar m-t36 m-b45">

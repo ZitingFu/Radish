@@ -21,7 +21,7 @@
                     <div class="img-list">{if $info.images}{foreach from=$info.images key=i item=item}<img src="{$item.images.b}">{/foreach}{/if}</div>
                 </div>
             </div>
-             <button type="button" class="btn btn-warning btn-primary w-217 h-36">确认修改</button>
+             <button type="button" class="btn btn-warning btn-primary w-217 h-36" style="width:224px;">确认修改</button>
         </form>
     </div>
 </div>

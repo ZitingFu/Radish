@@ -1,6 +1,7 @@
 {include file="radishweb/widgets/header/header.tpl"}
 <body>
   {include file="radishweb/widgets/nav/nav.tpl"}
+
   <div class="wrapper container">
     <ul class="nav nav-pills mb-3 container" id="pills-tab" role="tablist" style="width:100%">
       <li class="nav-item p-w25">
@@ -17,7 +18,7 @@
       </li>
     </ul>
 <div class="tab-content" id="pills-tabContent">
-    <div class="section reg create m-b50 tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <div class="section reg create m-b50 tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" style="float:none">
       <!--<div class="titlebar m-t30 m-b30">
         <div class="listHead"><a href="/radishweb/index/about" class="listActive">信息</a>{if $session.type=='2'}<a href="/radishweb/notice/create">公告</a>{/if}</div>
       </div>-->
@@ -45,8 +46,7 @@
             <!--<div class="img-list2"></div>-->
           <!--</div>-->
         <!--</div>-->
-
-
+  
       <ul class="clearFix w-310">
         
         <li class="form-group form-name"> 
@@ -89,6 +89,30 @@
             <select class="form-control p-w62" name="g_id" id="unit_two"></select>
           </li>
         </div>
+         <div style="display:none">
+         <li class="form-group"> 
+          <input id="ticket" name="ticket" type="text" class="form-control p-w62" value="">
+        </li>
+         <li class="form-group form-name"> 
+          <input id="randstr" name="randstr" type="text" class="form-control p-w62" value="">
+        </li>
+         </div>
+
+         <li class="form-group form-unit" id="sid-type"  style="display:none">
+            <label for="" class="p-w25" >是否贵重</label>
+            <input type="hidden" name="sid-type" value="">
+            <select class="form-control p-w62" id="israch">
+               {foreach from=$foodcates key=i item=item1}
+                <option value="{$item1.id}" selected>{$item1.name}</option>
+               {/foreach} 
+            </select> 
+          </li>
+           <li class="form-group form-s_name" style="display:none">
+            <select class="form-control p-w62" id="type">
+              <option  value="">请选择物品种类</option>
+            </select>
+          </li>
+  
         <li class="form-s_id form-sid-type">
           <label for="s_id" class="p-w25">场所</label>
           <input type="hidden" name="sid-type" value="">
@@ -117,7 +141,7 @@
         </div>
         <li class="form-group m-t50" style="display:none"> <button type="button" id="submitInddenBtn" class="btn btn-warning btn-primary p-w70">确认发布</button>  <label class="p-w25"></label> </li>
       </ul>
-      
+     
         <!--经度-->
         <input type="hidden" name="longitude" id="longitude" value="">
         <!--纬度-->
@@ -139,7 +163,7 @@
               <span class="btn btn-success fileinput-button">请上传图片（选填）：
                   <!--<i class="fa fa-plus fa-fw"></i>-->
                   <img src="/images/picadd.png"></img>
-              <input type="file" multiple accept="image/*">
+                <input type="file" multiple accept="image/*">
               </span>
             </p>
             <table class="table table-striped table-hover table-file-upload m-t20">
@@ -153,17 +177,43 @@
           <p class="help-block">最多上传<code>8</code>个图片，请确认每个图片小于<code>10MB</code>。您也可以将需要上传的图片拖动到此处。</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" id="pictureUpload" style="display:none">确认</button>
+          <button type="button" class="btn btn-primary" id="pictureUpload" <!-- style="display:none" -->>确认</button>
          <!-- <button type="button" class="btn btn-danger btn-cancel" data-dismiss="modal">取消</button>-->
         </div>
-        
       </div>
-      <button type="button" class="btn btn-primary pull-right m-t10" id="pictureBtn">确认发布</button>
+      <!-- {include file="radishweb/widgets/nav/Verification/main.tpl"} -->
+      <button  type="button" class="btn btn-primary fabu pull-right m-t10" id="TencentCaptcha"  data-appid="{$captcha}"
+        data-cbfn="callback">验证信息</button>
+      <button  type="button" class="btn btn-primary fabu pull-right m-t10" style="display:none" id="pictureBtn">确认发布</button>
+
     </div> 
   </div>
-
-  <div class="tab-pane fade " id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-    <li class="form-group m-t240"> <button id="submitBtn" type="button" class="btn btn-warning btn-primary">发布成功，爱心值+1！</button>  <label class="p-w25"></label> </li>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" style="margin-bottom:100px; ">
+    <li class="form-group m-t240 w-451" style="box-shadow: rgb(107, 101, 101) 3px 3px 50px;"> 
+         <div class="Success_top"> 
+           <span>
+             <img src="1.png" alt=""  style="margin-right: 24px;">
+           </span>
+           发布成功，爱心值+1！
+         </div>
+         <div class="Success_box">
+           <div class="SU">
+              <div class="Success_left">
+                <img class="Success_logo" src="1.png" alt="" style="width:60px">
+              </div>
+              <div class="Success_right">
+                <h5 class="Success_compony_name" style="font-size: 16px;">阿里巴巴集团桂花</h5>
+                <p style="position: absolute;bottom: 0;font-size: 16px;" class="Success_compony_brief">阿里巴巴集团桂花糕桂花酒</p>
+              </div>
+              <div class="clear"></div>
+           </div>
+         </div>
+         <p class="w-268">以上企业感谢您对公益事业的支持已将<i class="fb492c">1.5元</i>
+          公益金打入您的
+          <i style="color:#fda249">账户余额</i>
+          <button style="width:135px;margin:0 auto;margin-top: 27px;height: 43px;background-color: #fda249;position: relative;margin-left: 67.5px;margin-bottom:31px;color:#fff" class="btn know">我知道了</button>
+         </p>
+    </li>
   </div>
  <!--新增2-->
   <div class="modal fade" id="img-upload-confirm2" tabindex="-1" role="dialog" aria-hidden="true">
@@ -201,21 +251,26 @@
     </div>
     </div>
   </div>
+   {include file="radishweb/widgets/nav/usernav-left.tpl"}
   <input type="hidden" value="" id="positionCity">
   <!--FileUpload-->
   <link rel="stylesheet" type="text/css" href="/util/FileUpload/FileUpload.css" />
+  <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
   <script src="FileUpload-create2.js"></script>
   <script src="FileUpload-create3.js"></script>
+
   <!--select2-->
   <link rel="stylesheet" type="text/css" href="/libs/select2-3.5.2/select2.css" />
   <link rel="stylesheet" type="text/css" href="/libs/select2-3.5.2/select2-bootstrap.css" />
   <link rel="stylesheet" href="create.css">
   <script type="text/javascript" src="/libs/select2-3.5.2/select2.min.js"></script>
   <script type="text/javascript" src="/libs/select2-3.5.2/select2_locale_zh-CN.js"></script>
+
+ <script type="text/javascript" src="plupload.full.min.js"></script>
+  <script type="text/javascript" src="upload.js"></script>
   <!--<script src="/libs/map/gaodeMap.js"></script>-->
-  <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=b253a2b2c53202149a1e6f1aa1e90a88&plugin=AMap.CitySearch"></script>
+  <script type="text/javascript" src="//webapi.amap.com/maps?v=1.3&key=b253a2b2c53202149a1e6f1aa1e90a88&plugin=AMap.CitySearch"></script>
   <script type="text/javascript" src="/util/FormValid.js"></script>
-  
+ 
   <script src="index.js"></script>
-  
 {include file="radishweb/widgets/footer/footer.tpl"}

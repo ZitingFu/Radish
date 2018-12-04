@@ -1,0 +1,88 @@
+*{
+margin: 0;padding: 0;
+}
+.state{
+display: none;
+}
+.cd{
+background-color: red;
+}
+.cancel:hover{
+background-color: #b8b6b6
+}
+.Surveydiv{
+margin:57px 0 44px 67px;
+}
+.rapper{
+width:1152px;
+margin: 0 auto;
+}
+
+.Survey-left{
+width: 15%;
+float: left;
+}
+
+.Survey-head{
+width: 80%;
+float: right;
+}
+.Survey-head h2{
+padding-top: 0;
+border-bottom:1px solid #999;
+margin-bottom:58px; 
+margin-top:0; 
+}
+.Survey-head h2 span{
+font-weight: normal;
+text-align: center;
+/*width: 70px;*/
+text-align: center;
+display: inline-block;
+font-size: 20px;
+color: #fc9937;
+}
+
+.banxin{
+width: 1152px;
+margin: 0 auto;
+}
+
+
+/*...........................................*/
+.none{
+	display: none;
+}
+.red{
+	color: red;
+}
+#tel{
+	width: 241px;
+}
+.control-label{
+	width: 140px;
+}
+
+.warning{
+    border: 1px solid red;
+}
+.alert-warning{
+	opacity: 0;
+}
+@media (max-width: 620px){
+.Survey-head{
+	width: 100%;
+}
+.Survey-head .ul li:nth-child(odd){
+	border-bottom: 1px solid #fff;
+}
+.Survey-head .ul li{
+	margin-right:5px;
+	float: left;
+	width: 30%;
+	height:40px;
+	line-height: 40px;
+}
+.Survey-head h2{
+	margin-bottom:15px;
+}

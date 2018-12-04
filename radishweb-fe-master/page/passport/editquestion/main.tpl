@@ -77,12 +77,14 @@
               {/foreach}
             </select>
           </li>
-          <li class="form-group"> <button type="button" class="btn btn-warning btn-primary p-w70">保存</button>  <label class="p-w25"></label> </li>
+          <li class="form-group"> <button type="button" class="btn btn-warning btn-primary p-w70" style="width:219px;height:40px;">保存</button>  <label class="p-w25"></label> </li>
         </ul>
         </form>
       </div>
     </div>
+    <div class="left">
     {include file="radishweb/widgets/nav/usernav-left.tpl"}
+    </div>
   </div>
   <div class="modal fade" id="img-upload-confirm" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
@@ -117,7 +119,17 @@
       </div>
     </div> 
   </div>
-    
+  <style>
+  @media (min-width: 1200px){
+
+    .wrapper  .left .leftpop {
+      display: block;
+    }
+    .w-830 {
+       width: 80%;
+    }
+  }
+  </style>
   <script type="text/html" id="data-image">
     {$question.images|json_encode}
   </script>

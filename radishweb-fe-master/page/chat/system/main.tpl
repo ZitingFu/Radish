@@ -1,8 +1,8 @@
 {include file="radishweb/widgets/header/header.tpl"}
 <body>
 {include file="radishweb/widgets/nav/nav.tpl"}
-<div class="wrapper p-t30">
-    <div class="content w-930 pull-right section" style="padding-top:0">
+<div class="wrapper p-t30 paddingLg">
+    <div class="content w-930 pull-right section w-baifen80" style="padding-top:0">
         <div class="titlebar">
         <label>系统消息</label>
         </div>

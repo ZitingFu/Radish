@@ -4,7 +4,11 @@
 <div class="wrapper p-t30">
     <div class="content w-841 pull-right wrap-content section">
         <div class="titlebar m-t0 m-b20">
-            <label>个人中心</label>&nbsp;&nbsp;<a href="/radishweb/passport/lovelist?type=1">爱心值&nbsp;{$pass.love}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/radishweb/question/stat">发布数&nbsp;{$pass.issue_num}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/radishweb/question/foundlist" class="activeLove">已找到&nbsp;{$pass.found_num}</a>
+            <label>个人中心</label>&nbsp;&nbsp;
+            <a href="/radishweb/passport/balance?type=1">余额账户&nbsp;</a><b class="lineI"></b>
+            <a href="/radishweb/passport/lovelist?type=1">爱心值&nbsp;{$pass.love}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="/radishweb/question/stat">发布数&nbsp;{$pass.issue_num}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="/radishweb/question/foundlist" class="activeLove">已找到&nbsp;{$pass.found_num}</a>
         </div>
         <div class="col-list m-t20">
             {if $list}
@@ -15,7 +19,7 @@
                         {if $session.avatar.b}
                         <img src="{$session.avatar.b}" class="pull-left imgWrap" width="60" height="60">
                         {else}
-                        <img src="/images/avatar2.jpg" class="pull-left imgWrap" width="60" height="60">
+                        <img src="1.png" class="pull-left imgWrap" width="60" height="60">
                         {/if}
                         <div class="info pull-right p-w91">
                             <p> {$item.user_name}<label class="pull-right">{$item.time}</label> </p>
@@ -40,5 +44,12 @@
     {include file="radishweb/widgets/nav/usernav-left.tpl"}
 </div>
 {include file="radishweb/widgets/page/page.tpl"}
+<style>
+    @media only screen and (min-width: 1200px) {
+        body .leftpop{
+            display: block;
+        }
+    }
+</style>
 <link rel="stylesheet" href="foundlish.css">
 {include file="radishweb/widgets/footer/footer.tpl"}

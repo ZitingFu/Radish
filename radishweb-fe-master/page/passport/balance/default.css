@@ -1,0 +1,268 @@
+.headerTop {
+    background: #f3f5f9;
+    height: 100px;
+    padding: 22px 40px;
+    overflow: hidden;
+}
+.headerTop .h-money{
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+.headerTop .h-money strong{
+    margin-left: 11px;
+    font-size: 20px;
+    color: #fda249;
+    font-weight: 400;
+    line-height: 19px;
+}
+.headerTop .h-def{
+    font-size: 14px;
+    color: #666666;
+}
+#recharge,#withdraw{
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    margin-top: -46px;
+    padding: 0;
+}
+.btn-outline{
+    background: #fff;
+}
+#recharge:hover{
+    background: #fda249;
+}
+.Cover{
+    /*遮罩层*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    background-color: rgba(0,0,0,.3);
+    display: none;
+}
+.Cover .m-title{
+    padding-left: 12px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #666666;
+    border-bottom:#c7c7c7 1px solid;
+}
+.Cover .m-title img{
+    height: 13px;
+    width: 13px;;
+    margin: 12px 12px 0 0;
+    float: right;
+    cursor: pointer;
+}
+#onMoney{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 140px;
+    margin-bottom: 27px;
+}
+#onMoney option{
+}
+.m-Cover .recharge{
+    overflow: hidden;
+    padding-top: 20px;
+    padding-left: 53px;
+}
+.Cover .m-Cover{
+    border-radius: 3px;
+    width: 470px;
+    margin: 227px auto 0 auto;
+    background: #fff;
+}
+.recharge label img{
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+}
+.recharge input {
+    margin: 0 15px;
+}
+.confirm-payment{
+    height: 36px;
+    width: 130px;
+    background: #fda249;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    margin: 30px 0 30px 130px;
+}
+/*QRcode*/
+#QRcode{
+    width: 300px;
+    height: 300px;
+    margin: 10px auto;
+    display: none;
+}
+#QRcode img{
+    width: 100%;
+    height: 100%;
+}
+/*交易记录*/
+.transactionRecord{
+    border-bottom: solid 1px #ececec;
+}
+.transactionRecord p{
+    text-align: center;
+    display: inline-block;
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    background: #fda249;
+    color: #fff;
+    font-size: 14px;
+}
+.recordList{
+    border: solid 1px #ececec;
+    margin-bottom: 35px;
+}
+.recordList>li{
+    margin: 0 47px;
+    border-bottom:solid 1px #ececec ;
+    height: 45px;
+    line-height: 45px;
+    overflow: hidden;
+}
+.listF{
+    padding:0 47px ;
+    border-top:solid 1px #ececec ;
+    border-bottom:solid 1px #ececec ;
+    height: 45px;
+    line-height: 45px;
+    overflow: hidden;
+    background: #f3f5f9;
+}
+.listF span,.recordList li span{
+    font-size: 14px;
+    float: left;
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}
+
+/*提现*/
+#isWithdraw{
+    overflow: hidden;
+}
+.withdrawWrap{
+    padding-left: 57px;
+    margin-top: 28px;
+}
+.withdrawWrap>div>span{
+    font-size: 14px;
+    color: #666666;
+    margin-right: 19px;
+}
+.withdrawWrap .withdrawMoney>input{
+    width: 190px;
+    height: 28px;
+    font-size: 14px;
+    padding-left: 8px;
+    border-radius: 3px;
+}
+.withdrawWrap .withdrawWX{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666666;
+}
+.withdrawWrap .withdrawWX span{
+    padding-left: 28px;
+}
+.withdrawWrap .withdrawWX img{
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}
+.Application{
+    display: block;
+    width: 130px;
+    height: 36px;
+    margin: 36px auto 30px auto;
+}
+/*提现绑定微信*/
+/*费率显示*/
+.WXLetter,.XLBFee{
+    font-size: 12px;
+    color: #808080;
+    line-height: 20px;
+    padding-left: 90px;
+    margin-top: 5px;
+}
+.WXLetter{
+    display: none;
+    color: red;
+}
+
+/**/
+/*密码输入框*/
+.m-password{
+    overflow: hidden;
+}
+.m-password>p{
+    margin: 29px 0;
+    text-align: center;
+}
+#withdrawInput{
+    border:1px solid #c7c7c7 ;
+}
+.m-Cover2{
+    display: none;
+}
+#Cover2{
+    display: none;
+}
+
+
+.cover3{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0,0,0,.3);
+    display: none;
+}
+.c3-box{
+    border-radius: 3px;
+    width: 470px;
+    margin: 227px auto 0 auto;
+    background: #fff;
+    overflow: hidden;
+}
+.c3-button{
+    display: block;
+    width: 130px;
+    height: 36px;
+    margin: 36px auto 30px auto;
+}
+.c3-title{
+    padding-left: 12px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #666666;
+    border-bottom:#c7c7c7 1px solid;
+}
+.c3-content{
+    line-height: 120px;
+    height: 120px;
+    font-size: 17px;
+    text-align: center;
+    color: #990000;
+}
+.wrapper div.section.wrap-content{
+    padding-top:0;
+}
+a:hover{
+    color: #fc9937;
+}

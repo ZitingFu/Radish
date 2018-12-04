@@ -21,7 +21,9 @@
         {/if}
       </div>
     </div>
-    {include file="radishweb/widgets/nav/usernav-left.tpl"}
+    <div id="block">
+      {include file="radishweb/widgets/nav/usernav-left.tpl"}
+    </div>
   </div>
   {include file="radishweb/widgets/page/page.tpl"}
   <!--select2-->
@@ -30,5 +32,12 @@
   <script type="text/javascript" src="/libs/select2-3.5.2/select2.min.js"></script>
   <script type="text/javascript" src="/libs/select2-3.5.2/select2_locale_zh-CN.js"></script>
   <script src="index.js"></script> 
+  <style>
+    @media only screen and (min-width: 1200px){
+      #block .leftpop {
+         display: block;
+      }
+    }
+  </style>
 
 {include file="radishweb/widgets/footer/footer.tpl"}

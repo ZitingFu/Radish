@@ -4,7 +4,6 @@
     var navListName2 = window.location.pathname.split('/')[2];
     var navListName3 = window.location.pathname.split('/')[3];
     if(navListName3 =='index'){
-      console.log('index--------------');
       $('.nav-index').addClass('active');
     }
     if(navListName3 == 'list'){
@@ -13,7 +12,6 @@
     if(navListName2 == 'question'){
       if(navListName3 == 'create'){
         $('.nav-login').addClass('active');
-        console.log('question-------------create')
       }
     }
     
@@ -48,14 +46,10 @@
     if(footerheight < 530){
       $('.footer').addClass('posation'); 
     };
-    
-    
     var height = $(window).height();
     var contentheight = height - 333;
     $('.wrap-content').attr('style','min-height:'+contentheight+'px');
 
-
-    
-     
   })
+   
 })(window, $, undefined) ;
